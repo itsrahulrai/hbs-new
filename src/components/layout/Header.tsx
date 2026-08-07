@@ -12,7 +12,7 @@ import { MobileNav } from "./MobileNav";
 export function Header() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [panelPos, setPanelPos] = useState({ left: 0, arrowLeft: 24 });
+  const [panelPos, setPanelPos] = useState({ left: 0 });
 
   const headerRef = useRef<HTMLElement>(null);
   const navListRef = useRef<HTMLDivElement>(null);
@@ -27,7 +27,10 @@ export function Header() {
       }
     }
     function onClickOutside(event: MouseEvent) {
-      if (headerRef.current && !headerRef.current.contains(event.target as Node)) {
+      if (
+        headerRef.current &&
+        !headerRef.current.contains(event.target as Node)
+      ) {
         setOpenIndex(null);
       }
     }
@@ -53,12 +56,23 @@ export function Header() {
       const itemRect = itemEl.getBoundingClientRect();
       const panelWidth = panelEl.offsetWidth;
 
-      const itemCenter = itemRect.left - navRect.left + itemRect.width / 2;
-      const maxLeft = Math.max(navRect.width - panelWidth, 0);
-      const left = Math.min(Math.max(itemCenter - panelWidth / 2, 0), maxLeft);
-      const arrowLeft = Math.min(Math.max(itemCenter - left, 20), panelWidth - 20);
+      const itemCenterNavRelative =
+        itemRect.left - navRect.left + itemRect.width / 2;
+      const desiredViewportLeft =
+        navRect.left + itemCenterNavRelative - panelWidth / 2;
 
-      setPanelPos({ left, arrowLeft });
+      const margin = 16;
+      const minViewportLeft = margin;
+      const maxViewportLeft = Math.max(
+        window.innerWidth - panelWidth - margin,
+        margin,
+      );
+      const clampedViewportLeft = Math.min(
+        Math.max(desiredViewportLeft, minViewportLeft),
+        maxViewportLeft,
+      );
+
+      setPanelPos({ left: clampedViewportLeft - navRect.left });
     }
 
     measure();
@@ -96,7 +110,7 @@ export function Header() {
                 >
                   <button
                     type="button"
-                    className="flex items-center gap-1 whitespace-nowrap rounded-lg px-5 py-2.5 text-[15px] font-semibold tracking-[0.2px] text-slate-800 transition-colors duration-200 hover:text-[var(--color-primary)]"
+                    className="group flex items-center gap-1 whitespace-nowrap rounded-lg px-5 py-2.5 text-[15px] font-semibold tracking-[0.2px] text-slate-800 transition-colors duration-200 hover:text-[var(--color-primary)]"
                     aria-expanded={isOpen}
                     aria-haspopup={hasMenu ? "true" : undefined}
                     onClick={() => {
@@ -105,14 +119,18 @@ export function Header() {
                     }}
                     onMouseEnter={() => hasMenu && setOpenIndex(index)}
                   >
-                    <span
-                      className={`border-b-[3px] pb-0.5 leading-none transition-colors duration-200 ${
-                        isOpen
-                          ? "border-[var(--color-primary)] text-[var(--color-primary)]"
-                          : "border-transparent"
-                      }`}
-                    >
-                      {hasMenu ? item.label : <Link href={item.href}>{item.label}</Link>}
+                    <span className="relative inline-flex pb-2">
+                      {hasMenu ? (
+                        item.label
+                      ) : (
+                        <Link href={item.href}>{item.label}</Link>
+                      )}
+
+                      <span
+                        className={`absolute left-0 -bottom-2 h-[2px] rounded-full bg-[var(--color-primary)] transition-all duration-300 ${
+                          isOpen ? "w-full" : "w-0 group-hover:w-full"
+                        }`}
+                      />
                     </span>
                     {hasMenu && (
                       <Icon
@@ -121,7 +139,7 @@ export function Header() {
                         className={`transition-transform duration-200 ${
                           isOpen
                             ? "rotate-180 text-[var(--color-primary)]"
-                            : "text-slate-400"
+                            : "text-slate-400 group-hover:text-[var(--color-primary)]"
                         }`}
                       />
                     )}
@@ -137,7 +155,6 @@ export function Header() {
                 ref={panelRef}
                 item={activeItem}
                 left={panelPos.left}
-                arrowLeft={panelPos.arrowLeft}
                 onNavigate={() => setOpenIndex(null)}
               />
             )}

@@ -44,7 +44,7 @@ export const primaryNav: MegaMenuItem[] = [
     columns: [
       {
         heading: "AI Search & Visibility",
-        icon: "ai",
+        icon: "/icons/ai.svg",
         links: [
           { label: "LLMO Services", href: "/digital-marketing/llmo-services" },
           {
@@ -64,7 +64,7 @@ export const primaryNav: MegaMenuItem[] = [
       },
       {
         heading: "SEO Services",
-        icon: "seo",
+        icon: "/icons/seo.svg",
         links: [
           { label: "SEO Services", href: "/digital-marketing/seo-services" },
           { label: "Local SEO", href: "/digital-marketing/local-seo" },

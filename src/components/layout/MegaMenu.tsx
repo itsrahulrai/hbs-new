@@ -8,33 +8,33 @@ export const MegaMenuPanel = forwardRef<
   {
     item: MegaMenuItem;
     left: number;
-    arrowLeft: number;
     onNavigate: () => void;
   }
->(function MegaMenuPanel({ item, left, arrowLeft, onNavigate }, ref) {
+>(function MegaMenuPanel({ item, left, onNavigate }, ref) {
   const columns = item.columns ?? [];
 
   return (
     <div
       ref={ref}
       style={{ left }}
-      className="absolute top-full z-40 pt-[13px]"
+      className="absolute top-full z-40 pt-[22px]"
     >
-      <div className="relative">
-        {/* arrow attached to top border, sits above the rounded box */}
-        <span
-          aria-hidden="true"
-          style={{ left: arrowLeft }}
-          className="absolute -top-[8px] z-10 h-3.5 w-3.5 -translate-x-1/2 rotate-45 border-l-[3px] border-t-[3px] border-[var(--color-primary)] bg-white"
-        />
-
-        <div className="overflow-hidden rounded-xl border-t-[3px] border-[var(--color-primary)] bg-white shadow-[0_20px_45px_-12px_rgba(15,23,42,0.18)]">
-        <div className="grid auto-cols-max grid-flow-col gap-x-9 gap-y-8 px-8 py-8">
+      <div className="overflow-hidden rounded-xl border-t-[3px] border-[var(--color-primary)] bg-white shadow-[0_20px_45px_-12px_rgba(15,23,42,0.18)]">
+        <div className="grid auto-cols-max grid-flow-col divide-x divide-slate-100 px-8 pt-8 pb-12">
           {columns.map((column) => (
-            <div key={column.heading} className="flex w-[210px] shrink-0 flex-col">
+            <div
+              key={column.heading}
+              className="flex w-[210px] shrink-0 flex-col px-6 first:pl-0 last:pr-0"
+            >
               {column.icon && (
-                <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-[var(--color-primary)]/8 text-[var(--color-primary)]">
-                  <Icon name={column.icon as never} size={19} />
+                <div className="mb-4 flex h-14 items-center justify-center">
+                  <img
+                    src={column.icon}
+                    alt=""
+                    width={44}
+                    height={44}
+                    className="h-[44px] w-[44px] object-contain"
+                  />
                 </div>
               )}
 
@@ -62,7 +62,6 @@ export const MegaMenuPanel = forwardRef<
               </ul>
             </div>
           ))}
-        </div>
         </div>
       </div>
     </div>
