@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <title>Social Media Marketing Icon</title>
+  <desc>Professional social media marketing illustration with clearly visible Instagram, Facebook, YouTube, LinkedIn, X and TikTok style icons.</desc>
+
+  <g fill="none" stroke="#EF3037" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- Connecting network -->
+    <g stroke-width="10" opacity=".55">
+      <path d="M260 250 L405 400"/>
+      <path d="M764 250 L619 400"/>
+      <path d="M260 774 L405 624"/>
+      <path d="M764 774 L619 624"/>
+      <path d="M512 170 V315"/>
+      <path d="M512 709 V854"/>
+    </g>
+
+    <!-- Instagram -->
+    <g>
+      <rect x="105" y="105" width="190" height="190" rx="48" stroke-width="18"/>
+      <rect x="150" y="150" width="100" height="100" rx="28" stroke-width="15"/>
+      <circle cx="200" cy="200" r="25" stroke-width="15"/>
+      <circle cx="232" cy="168" r="9" fill="#EF3037" stroke="none"/>
+    </g>
+
+    <!-- Facebook -->
+    <g>
+      <rect x="729" y="105" width="190" height="190" rx="48" stroke-width="18"/>
+      <path d="M823 258 V178 C823 157 834 147 855 147 H875" stroke-width="20"/>
+      <path d="M790 207 H868" stroke-width="20"/>
+    </g>
+
+    <!-- YouTube -->
+    <g>
+      <rect x="105" y="729" width="190" height="190" rx="48" stroke-width="18"/>
+      <rect x="145" y="780" width="110" height="82" rx="24" stroke-width="15"/>
+      <path d="M190 800 L190 842 L226 821 Z" fill="#EF3037" stroke="none"/>
+    </g>
+
+    <!-- LinkedIn -->
+    <g>
+      <rect x="729" y="729" width="190" height="190" rx="48" stroke-width="18"/>
+      <circle cx="778" cy="786" r="10" fill="#EF3037" stroke="none"/>
+      <path d="M778 814 V860 M807 860 V832 C807 814 822 807 834 807 C850 807 857 817 857 835 V860 M807 832 V860" stroke-width="14"/>
+    </g>
+
+    <!-- X / Twitter -->
+    <g>
+      <rect x="417" y="75" width="190" height="150" rx="42" stroke-width="16"/>
+      <path d="M456 113 L568 187 M568 113 L456 187" stroke-width="18"/>
+      <path d="M458 113 H485 L567 187 H540 Z" fill="#EF3037" stroke="none"/>
+    </g>
+
+    <!-- TikTok-style -->
+    <g>
+      <rect x="417" y="799" width="190" height="150" rx="42" stroke-width="16"/>
+      <path d="M503 832 V900 C503 921 487 932 470 932 C452 932 440 920 440 905 C440 888 453 878 470 878 C482 878 493 883 503 890"
+            stroke-width="14"/>
+      <path d="M503 832 C519 851 533 860 555 861" stroke-width="14"/>
+      <path d="M503 832 V855" stroke-width="14"/>
+    </g>
+
+    <!-- Central megaphone -->
+    <g>
+      <path d="M375 425 H470 L670 335 V689 L470 599 H375
+               C328 599 290 561 290 512
+               C290 463 328 425 375 425Z"
+            fill="#EF3037" stroke="#EF3037" stroke-width="18"/>
+
+      <!-- front rim -->
+      <path d="M670 335 V689" stroke-width="18"/>
+
+      <!-- inner highlight -->
+      <path d="M385 449 H468 L635 375" stroke="#fff" stroke-width="10"/>
+
+      <!-- handle -->
+      <path d="M425 599 V742 C425 767 445 787 470 787 H487
+               C512 787 532 767 532 742 V612"
+            fill="#fff" stroke="#EF3037" stroke-width="18"/>
+
+      <!-- handle grip -->
+      <path d="M452 700 H505" stroke-width="11"/>
+
+      <!-- sound waves -->
+      <g stroke-width="17">
+        <path d="M724 410 L785 370"/>
+        <path d="M741 512 H818"/>
+        <path d="M724 614 L785 654"/>
+      </g>
+    </g>
+
+    <!-- Small decorative nodes -->
+    <g fill="#EF3037" stroke="none">
+      <circle cx="344" cy="360" r="9"/>
+      <circle cx="680" cy="360" r="9"/>
+      <circle cx="344" cy="664" r="9"/>
+      <circle cx="680" cy="664" r="9"/>
+    </g>
+  </g>
+</svg>

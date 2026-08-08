@@ -44,7 +44,7 @@ export const primaryNav: MegaMenuItem[] = [
     columns: [
       {
         heading: "AI Search & Visibility",
-        icon: "/icons/ai.svg",
+        icon: "/icons/ai-large.svg",
         links: [
           { label: "LLMO Services", href: "/digital-marketing/llmo-services" },
           {
@@ -64,7 +64,7 @@ export const primaryNav: MegaMenuItem[] = [
       },
       {
         heading: "SEO Services",
-        icon: "/icons/seo.svg",
+        icon: "/icons/seo-large.svg",
         links: [
           { label: "SEO Services", href: "/digital-marketing/seo-services" },
           { label: "Local SEO", href: "/digital-marketing/local-seo" },
@@ -76,7 +76,7 @@ export const primaryNav: MegaMenuItem[] = [
       },
       {
         heading: "Content & Link Building",
-        icon: "content",
+        icon: "/icons/document-pencil-icon.svg",
         links: [
           { label: "Content Writing", href: "/digital-marketing/content-writing" },
           { label: "Link Building", href: "/digital-marketing/link-building" },
@@ -87,7 +87,7 @@ export const primaryNav: MegaMenuItem[] = [
       },
       {
         heading: "Paid Marketing",
-        icon: "ads",
+        icon: "/icons/megaphone-announcement-icon.svg",
         links: [
           { label: "Google Ads", href: "/digital-marketing/google-ads" },
           { label: "PPC Management", href: "/digital-marketing/ppc-management" },
@@ -98,7 +98,7 @@ export const primaryNav: MegaMenuItem[] = [
       },
       {
         heading: "Social Media",
-        icon: "social",
+        icon: "/icons/clean-simple-social-media.svg",
         links: [
           { label: "Social Media Optimisation", href: "/digital-marketing/social-media-optimisation" },
           { label: "Social Media Marketing", href: "/digital-marketing/social-media-marketing" },
@@ -111,7 +111,7 @@ export const primaryNav: MegaMenuItem[] = [
       },
       {
         heading: "Packages",
-        icon: "package",
+        icon: "icons/premium-package.svg",
         links: [
           { label: "SEO Packages", href: "/digital-marketing/seo-packages" },
           { label: "Local SEO Packages", href: "/digital-marketing/local-seo-packages" },

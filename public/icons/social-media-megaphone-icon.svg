@@ -1,0 +1,35 @@
+<svg width="512" height="512" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 140">
+  <g fill="none" stroke="#EF3037" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- top-left social tile -->
+    <rect x="22" y="14" width="29" height="29" rx="5"/>
+    <circle cx="36.5" cy="28.5" r="6"/>
+    <circle cx="41" cy="23.8" r="1.5" fill="#EF3037" stroke="none"/>
+
+    <!-- top-right facebook-style tile -->
+    <rect x="105" y="14" width="29" height="29" rx="5"/>
+    <path d="M121 37V22h4"/>
+    <path d="M117 27h8"/>
+
+    <!-- center megaphone -->
+    <path d="M57 57h13l31-13v36L70 67H57c-5 0-9-4-9-9s4-9 9-9z"/>
+    <path d="M70 67v19"/>
+    <path d="M62 67v18"/>
+    <path d="M98 44v36"/>
+
+    <!-- left bottom social tile -->
+    <rect x="22" y="92" width="29" height="29" rx="5"/>
+    <path d="M31 106c4-5 9-5 13-1"/>
+    <circle cx="35" cy="113" r="2"/>
+
+    <!-- right bottom social tile -->
+    <rect x="105" y="92" width="29" height="29" rx="5"/>
+    <circle cx="119.5" cy="106.5" r="6"/>
+    <path d="M116 106h7M119.5 103v7"/>
+
+    <!-- connection lines -->
+    <path d="M51 29h9"/>
+    <path d="M100 29h5"/>
+    <path d="M51 106h9"/>
+    <path d="M100 106h5"/>
+  </g>
+</svg>

@@ -27,15 +27,17 @@ export const MegaMenuPanel = forwardRef<
               className="flex w-[210px] shrink-0 flex-col px-6 first:pl-0 last:pr-0"
             >
               {column.icon && (
-                <div className="mb-4 flex h-14 items-center justify-center">
-                  <img
-                    src={column.icon}
-                    alt=""
-                    width={44}
-                    height={44}
-                    className="h-[44px] w-[44px] object-contain"
-                  />
-                </div>
+                <div className="mb-4 flex h-16 w-full items-center justify-center">
+  <div className="flex h-[52px] w-[52px] items-center justify-center">
+    <img
+      src={column.icon}
+      alt=""
+      width={52}
+      height={52}
+      className="h-full w-full object-contain"
+    />
+  </div>
+</div>
               )}
 
               <h3 className="mb-3 text-[15px] font-bold leading-snug text-slate-900">

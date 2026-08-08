@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <title>Premium Package Box Icon</title>
+  <desc>Professional red package box icon with clean geometric folds</desc>
+
+  <g stroke="#EF3037" stroke-width="24" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Top of package -->
+    <path fill="#EF3037" d="M512 112 850 302 512 492 174 302Z"/>
+
+    <!-- Left/front face -->
+    <path fill="#EF3037" d="M174 302 512 492v390L174 692Z"/>
+
+    <!-- Right/front face -->
+    <path fill="#EF3037" d="m512 492 338-190v390L512 882Z"/>
+
+    <!-- Top fold lines -->
+    <path fill="none" stroke="#fff" d="m174 302 338 190 338-190"/>
+    <path fill="none" stroke="#fff" d="M512 492v390"/>
+
+    <!-- Package tape / central fold -->
+    <path fill="none" stroke="#fff" d="M512 492 398 428"/>
+    <path fill="none" stroke="#fff" d="m512 492 114-64"/>
+
+    <!-- Subtle box seam details -->
+    <path fill="none" stroke="#fff" stroke-width="18" d="M238 338v314"/>
+    <path fill="none" stroke="#fff" stroke-width="18" d="M786 338v314"/>
+  </g>
+</svg>
