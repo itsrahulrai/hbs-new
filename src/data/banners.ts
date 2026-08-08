@@ -6,7 +6,7 @@ export const desktopHeroBanners = [
 ];
 
 export const mobileHeroBanners = [
-  "/images/banner/mobile/mob-banner-1.png",
+  "/images/banner/mobile/mob-banner-11.png",
   "/images/banner/mobile/mob-banner-2.png",
   "/images/banner/mobile/mob-banner-3.png",
 ];
