@@ -38,8 +38,8 @@ export function MobileNav({
                 {/* Main Navigation Item */}
                 <div
                   className={`flex items-center justify-between ${isOpen
-                      ? "bg-[var(--color-primary)]/[0.06]"
-                      : ""
+                    ? "bg-[var(--color-primary)]/[0.06]"
+                    : ""
                     }`}
                 >
                   <Link

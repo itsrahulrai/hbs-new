@@ -1,7 +1,14 @@
-export const heroBanners = [
-  "/images/banner/banner3.png",
+
+export const desktopHeroBanners = [
+   "/images/banner/bb3.png",
   "/images/banner/b22.png",
   "/images/banner/b11.png",
+];
+
+export const mobileHeroBanners = [
+  "/images/banner/mobile/mob-banner-1.png",
+  "/images/banner/mobile/mob-banner-2.png",
+  "/images/banner/mobile/mob-banner-3.png",
 ];
 
 export const marketingBanner = {
