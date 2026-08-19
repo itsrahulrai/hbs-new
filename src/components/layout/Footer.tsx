@@ -67,12 +67,11 @@ export function Footer() {
       cta: "View Location",
       icon: Building2,
       highlightText: "Primary HQ",
-      // Card 1: Elegant Soft Red / Rose Theme
-      cardBg: "bg-gradient-to-br from-white via-red-50/20 to-red-50/50 border-red-200/80 hover:border-red-300",
-      iconBg: "bg-[#EF3037] text-white shadow-md shadow-red-500/20",
-      tagColor: "bg-red-100 text-[#EF3037] border-red-200",
-      accentBar: "bg-[#EF3037]",
-      addressBox: "bg-white/80 border-red-100 text-[#334155]",
+      cardBg: "bg-gradient-to-br from-white via-red-50/40 to-rose-100/40 border-red-200/90 hover:border-red-400 hover:shadow-[0_10px_30px_rgba(239,48,55,0.12)]",
+      iconBg: "bg-gradient-to-br from-[#EF3037] to-[#D9232A] text-white shadow-md shadow-red-500/25",
+      tagColor: "bg-red-500 text-white shadow-xs shadow-red-500/20",
+      accentBar: "bg-gradient-to-r from-[#EF3037] to-rose-400",
+      addressBox: "bg-white/90 border-red-100/80 text-[#334155] shadow-xs",
       ctaColor: "text-[#EF3037] hover:text-[#D9232A]",
     },
     {
@@ -84,12 +83,11 @@ export function Footer() {
       cta: "View Location",
       icon: Compass,
       highlightText: "Tower-2 Branch",
-      // Card 2: Warm Amber / Orange Theme
-      cardBg: "bg-gradient-to-br from-white via-amber-50/20 to-amber-50/50 border-amber-200/80 hover:border-amber-300",
-      iconBg: "bg-amber-500 text-white shadow-md shadow-amber-500/20",
-      tagColor: "bg-amber-100 text-amber-800 border-amber-200",
-      accentBar: "bg-amber-500",
-      addressBox: "bg-white/80 border-amber-100 text-[#334155]",
+      cardBg: "bg-gradient-to-br from-white via-amber-50/40 to-orange-100/40 border-amber-200/90 hover:border-amber-400 hover:shadow-[0_10px_30px_rgba(245,158,11,0.12)]",
+      iconBg: "bg-gradient-to-br from-amber-500 to-amber-600 text-white shadow-md shadow-amber-500/25",
+      tagColor: "bg-amber-500 text-white shadow-xs shadow-amber-500/20",
+      accentBar: "bg-gradient-to-r from-amber-500 to-orange-400",
+      addressBox: "bg-white/90 border-amber-100/80 text-[#334155] shadow-xs",
       ctaColor: "text-amber-700 hover:text-amber-800",
     },
     {
@@ -101,12 +99,11 @@ export function Footer() {
       cta: "Visit Website",
       icon: Globe2,
       highlightText: "Global Hub",
-      // Card 3: Deep Clean Blue / Cyan Theme
-      cardBg: "bg-gradient-to-br from-white via-blue-50/20 to-blue-50/50 border-blue-200/80 hover:border-blue-300",
-      iconBg: "bg-blue-600 text-white shadow-md shadow-blue-500/20",
-      tagColor: "bg-blue-100 text-blue-800 border-blue-200",
-      accentBar: "bg-blue-600",
-      addressBox: "bg-white/80 border-blue-100 text-[#334155]",
+      cardBg: "bg-gradient-to-br from-white via-blue-50/40 to-indigo-100/40 border-blue-200/90 hover:border-blue-400 hover:shadow-[0_10px_30px_rgba(37,99,235,0.12)]",
+      iconBg: "bg-gradient-to-br from-blue-600 to-indigo-600 text-white shadow-md shadow-blue-500/25",
+      tagColor: "bg-blue-600 text-white shadow-xs shadow-blue-500/20",
+      accentBar: "bg-gradient-to-r from-blue-600 to-indigo-500",
+      addressBox: "bg-white/90 border-blue-100/80 text-[#334155] shadow-xs",
       ctaColor: "text-blue-700 hover:text-blue-800",
     },
   ];
@@ -275,77 +272,77 @@ export function Footer() {
         </Container>
       </div>
 
-      {/* VIBRANT MULTI-COLOR ADDRESS CARDS SECTION */}
-      <div className="py-8 bg-gradient-to-b from-[#F9FAFB] to-white border-t border-[#E5E7EB]">
-        <Container>
-          <section className="relative overflow-hidden rounded-xl border border-[#E5E7EB] bg-white px-5 py-5 shadow-sm">
+      {/* FULL WIDTH GLOBAL OFFICES SECTION */}
+      <div className="w-full bg-gradient-to-b from-[#F8FAFC] via-[#F1F5F9]/50 to-white py-10 border-t border-[#E2E8F0]">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
+          <section className="relative overflow-hidden rounded-2xl border border-slate-200 bg-white/90 backdrop-blur-md px-6 py-7 shadow-sm">
             
             {/* Header */}
-            <div className="relative mb-4 flex flex-col gap-1.5 border-b border-[#F1F3F5] pb-3 sm:flex-row sm:items-center sm:justify-between">
+            <div className="relative mb-6 flex flex-col gap-2 border-b border-slate-100 pb-4 sm:flex-row sm:items-center sm:justify-between">
               <div>
-                <div className="inline-flex items-center gap-1.5 rounded-full bg-red-50 px-2.5 py-0.5 border border-red-100">
-                  <span className="h-1.5 w-1.5 rounded-full bg-[#EF3037]" />
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-[#EF3037]">
-                    Delhi & Global Presence
+                <div className="inline-flex items-center gap-1.5 rounded-full bg-red-50 px-3 py-1 border border-red-100 shadow-2xs">
+                  <span className="h-1.5 w-1.5 rounded-full bg-[#EF3037] animate-pulse" />
+                  <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#EF3037]">
+                    Worldwide Locations
                   </span>
                 </div>
-                <h2 className="mt-1 text-xl font-bold tracking-tight text-[#111827]">
+                <h2 className="mt-1.5 text-xl font-extrabold tracking-tight text-[#111827]">
                   Our Offices & <span className="text-[#EF3037]">Global Hubs</span>
                 </h2>
               </div>
-              <p className="text-[11px] font-medium text-[#4B5563]">
-                Our headquarters and international work hubs.
+              <p className="text-[11px] font-semibold text-slate-500">
+                Strategic headquarters and international work presence.
               </p>
             </div>
 
-            {/* DIFFERENTLY COLORED COMPACT CARDS GRID */}
-            <div className="grid gap-3 lg:grid-cols-3">
+            {/* CARDS GRID */}
+            <div className="grid gap-4 lg:grid-cols-3">
               {offices.map((office) => {
                 const OfficeIcon = office.icon;
 
                 return (
                   <div
                     key={office.city + office.badgeLabel}
-                    className={`group relative flex flex-col justify-between overflow-hidden rounded-xl border p-3.5 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 ${office.cardBg}`}
+                    className={`group relative flex flex-col justify-between overflow-hidden rounded-xl border p-4 transition-all duration-300 hover:-translate-y-1 ${office.cardBg}`}
                   >
-                    {/* Top Accent Color Line */}
-                    <div className={`absolute top-0 left-0 right-0 h-[3px] ${office.accentBar}`} />
+                    {/* Top Accent Gradient Line */}
+                    <div className={`absolute top-0 left-0 right-0 h-[4px] ${office.accentBar}`} />
 
                     <div>
-                      {/* Top Row: Icon, City Name & Distinct Badge */}
-                      <div className="flex items-center justify-between gap-2 mb-2 pt-1">
-                        <div className="flex items-center gap-2">
-                          <div className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-md ${office.iconBg}`}>
-                            <OfficeIcon size={14} strokeWidth={2} />
+                      {/* Top Row */}
+                      <div className="flex items-center justify-between gap-2 mb-3 pt-1">
+                        <div className="flex items-center gap-2.5">
+                          <div className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-lg ${office.iconBg} transition-transform duration-300 group-hover:scale-110`}>
+                            <OfficeIcon size={16} strokeWidth={2.2} />
                           </div>
                           <div>
-                            <span className="text-[9px] font-bold uppercase tracking-wider text-[#6B7280]">{office.badgeLabel}</span>
-                            <h4 className="text-xs font-bold text-[#111827]">{office.city}</h4>
+                            <span className="text-[9px] font-bold uppercase tracking-wider text-slate-400">{office.badgeLabel}</span>
+                            <h4 className="text-xs font-bold text-slate-900">{office.city}</h4>
                           </div>
                         </div>
-                        <span className={`rounded px-2 py-0.5 text-[9px] font-bold border ${office.tagColor}`}>
+                        <span className={`rounded-md px-2 py-0.5 text-[9px] font-extrabold tracking-wide ${office.tagColor}`}>
                           {office.highlightText}
                         </span>
                       </div>
 
-                      {/* High Contrast Address Box */}
-                      <div className={`rounded-md border p-2 shadow-2xs ${office.addressBox}`}>
-                        <p className="text-[11px] leading-relaxed font-semibold">
+                      {/* Address Box */}
+                      <div className={`rounded-lg border p-2.5 ${office.addressBox}`}>
+                        <p className="text-[11px] leading-relaxed font-bold text-slate-700">
                           {office.address}
                         </p>
                       </div>
                     </div>
 
                     {/* Footer Links / CTA */}
-                    <div className="mt-2.5 pt-2 border-t border-slate-200/60 flex items-center justify-between">
-                      <span className="text-[10px] font-bold text-[#64748B]">{office.sub}</span>
+                    <div className="mt-3 pt-2.5 border-t border-slate-200/60 flex items-center justify-between">
+                      <span className="text-[10px] font-bold text-slate-500">{office.sub}</span>
                       <a
                         href={office.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`inline-flex items-center gap-1 text-[11px] font-bold hover:underline ${office.ctaColor}`}
+                        className={`inline-flex items-center gap-1 text-[11px] font-extrabold hover:underline ${office.ctaColor}`}
                       >
-                        {office.cta} <ArrowUpRight size={12} strokeWidth={2.5} />
+                        {office.cta} <ArrowUpRight size={13} strokeWidth={2.5} className="transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                       </a>
                     </div>
                   </div>
@@ -354,7 +351,7 @@ export function Footer() {
             </div>
 
           </section>
-        </Container>
+        </div>
       </div>
 
       {/* DARK BOTTOM */}
