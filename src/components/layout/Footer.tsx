@@ -283,16 +283,15 @@ export function Footer() {
                 <div className="inline-flex items-center gap-1.5 rounded-full bg-red-50 px-3 py-1 border border-red-100 shadow-2xs">
                   <span className="h-1.5 w-1.5 rounded-full bg-[#EF3037] animate-pulse" />
                   <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#EF3037]">
-                    Worldwide Locations
+                    India • Global Reach
                   </span>
                 </div>
+
                 <h2 className="mt-1.5 text-xl font-extrabold tracking-tight text-[#111827]">
-                  Our Offices & <span className="text-[#EF3037]">Global Hubs</span>
+                  Empowering Indian Businesses{" "}
+                  <span className="text-[#EF3037]">to Grow & Go Global</span>
                 </h2>
               </div>
-              <p className="text-[11px] font-semibold text-slate-500">
-                Strategic headquarters and international work presence.
-              </p>
             </div>
 
             {/* CARDS GRID */}
