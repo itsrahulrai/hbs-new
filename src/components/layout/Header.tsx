@@ -18,22 +18,18 @@ import { MegaMenuPanel } from "./MegaMenu";
 import { MobileNav } from "./MobileNav";
 
 export function Header() {
-  const [openIndex, setOpenIndex] = useState<number | null>(
-    null,
-  );
-
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
-
   const [compactLeft, setCompactLeft] = useState(0);
 
   const headerRef = useRef<HTMLElement>(null);
 
-  const itemRefs = useRef<
-    Array<HTMLDivElement | null>
-  >([]);
+  const itemRefs = useRef<Array<HTMLDivElement | null>>([]);
 
-  /*
-   * Close menus with Escape / outside click
+  /**
+   * Close menus:
+   * - Escape key
+   * - Click outside header
    */
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
@@ -46,68 +42,69 @@ export function Header() {
     function onClickOutside(event: MouseEvent) {
       if (
         headerRef.current &&
-        !headerRef.current.contains(
-          event.target as Node,
-        )
+        !headerRef.current.contains(event.target as Node)
       ) {
         setOpenIndex(null);
       }
     }
 
-    document.addEventListener(
-      "keydown",
-      onKeyDown,
-    );
-
-    document.addEventListener(
-      "mousedown",
-      onClickOutside,
-    );
+    document.addEventListener("keydown", onKeyDown);
+    document.addEventListener("mousedown", onClickOutside);
 
     return () => {
-      document.removeEventListener(
-        "keydown",
-        onKeyDown,
-      );
-
-      document.removeEventListener(
-        "mousedown",
-        onClickOutside,
-      );
+      document.removeEventListener("keydown", onKeyDown);
+      document.removeEventListener("mousedown", onClickOutside);
     };
   }, []);
 
-  /*
-   * Position compact one-column dropdown
-   * directly below the active menu item.
+  /**
+   * Position compact one-column mega menus.
+   *
+   * About Us
+   * Creative & Design
+   *
+   * Full-width menus such as:
+   * Digital Marketing
+   * Web & App Development
+   * Industries
+   *
+   * don't need this positioning calculation.
    */
   useLayoutEffect(() => {
     if (openIndex === null) return;
 
-    const activeItem = primaryNav[openIndex];
+    /**
+     * IMPORTANT:
+     * Capture the narrowed value.
+     *
+     * openIndex = number | null
+     * currentIndex = number
+     */
+    const currentIndex = openIndex;
 
+    const activeItem = primaryNav[currentIndex];
     const columns = activeItem?.columns ?? [];
 
-    // Full-width menus don't need positioning.
+    // Only compact one-column menus need positioning.
     if (columns.length !== 1) return;
 
     function updatePosition() {
       const header = headerRef.current;
-      const item = itemRefs.current[openIndex];
+      const item = itemRefs.current[currentIndex];
 
       if (!header || !item) return;
 
-      const headerRect =
-        header.getBoundingClientRect();
-
-      const itemRect =
-        item.getBoundingClientRect();
+      const headerRect = header.getBoundingClientRect();
+      const itemRect = item.getBoundingClientRect();
 
       const dropdownWidth = 340;
+      const margin = 16;
 
+      /*
+       * Center dropdown under active menu item.
+       */
       const itemCenter =
-        itemRect.left +
-        itemRect.width / 2;
+        itemRect.left + itemRect.width / 2;
 
       let left =
         itemCenter -
@@ -115,18 +112,17 @@ export function Header() {
         headerRect.left;
 
       /*
-       * Keep dropdown inside viewport
+       * Prevent dropdown from going
+       * outside the viewport.
        */
-      const margin = 16;
+      const minLeft =
+        margin - headerRect.left;
 
       const maxLeft =
         window.innerWidth -
         dropdownWidth -
         margin -
         headerRect.left;
-
-      const minLeft =
-        margin - headerRect.left;
 
       left = Math.max(
         minLeft,
@@ -151,6 +147,9 @@ export function Header() {
     };
   }, [openIndex]);
 
+  /**
+   * Currently active navigation item.
+   */
   const activeItem =
     openIndex !== null
       ? primaryNav[openIndex]
@@ -161,14 +160,21 @@ export function Header() {
       ref={headerRef}
       className="sticky top-0 z-50 border-b border-slate-100 bg-white"
     >
-      {/* ================= HEADER ================= */}
+      {/* =====================================================
+          HEADER
+          ===================================================== */}
 
       <Container>
         <div className="flex h-[76px] items-center justify-between">
-          {/* LOGO */}
+          {/* =================================================
+              LOGO
+              ================================================= */}
+
           <Logo />
 
-          {/* ================= DESKTOP NAV ================= */}
+          {/* =================================================
+              DESKTOP NAVIGATION
+              ================================================= */}
 
           <nav
             className="hidden items-center xl:flex"
@@ -181,34 +187,32 @@ export function Header() {
                 openIndex === index;
 
               const isLast =
-                index ===
-                primaryNav.length - 1;
+                index === primaryNav.length - 1;
 
               return (
                 <div
                   key={item.label}
                   ref={(element) => {
-                    itemRefs.current[index] =
-                      element;
+                    itemRefs.current[index] = element;
                   }}
                   className="flex shrink-0 items-center"
                 >
+                  {/* =================================================
+                      NAV BUTTON
+                      ================================================= */}
+
                   <button
                     type="button"
                     className="group flex items-center gap-1 whitespace-nowrap rounded-lg px-5 py-2.5 text-[15px] font-semibold tracking-[0.2px] text-slate-800 transition-colors duration-200 hover:text-[var(--color-primary)]"
                     aria-expanded={isOpen}
                     aria-haspopup={
-                      hasMenu
-                        ? "true"
-                        : undefined
+                      hasMenu ? "true" : undefined
                     }
                     onClick={() => {
                       if (!hasMenu) return;
 
                       setOpenIndex(
-                        isOpen
-                          ? null
-                          : index,
+                        isOpen ? null : index,
                       );
                     }}
                     onMouseEnter={() => {
@@ -217,20 +221,20 @@ export function Header() {
                       }
                     }}
                   >
-                    {/* MENU TEXT */}
+                    {/* =================================================
+                        MENU LABEL
+                        ================================================= */}
 
                     <span className="relative inline-flex pb-2">
                       {hasMenu ? (
                         item.label
                       ) : (
-                        <Link
-                          href={item.href}
-                        >
+                        <Link href={item.href}>
                           {item.label}
                         </Link>
                       )}
 
-                      {/* ACTIVE LINE */}
+                      {/* ACTIVE UNDERLINE */}
 
                       <span
                         className={`absolute left-0 -bottom-2 h-[2px] rounded-full bg-[var(--color-primary)] transition-all duration-300 ${
@@ -241,7 +245,9 @@ export function Header() {
                       />
                     </span>
 
-                    {/* CHEVRON */}
+                    {/* =================================================
+                        DROPDOWN CHEVRON
+                        ================================================= */}
 
                     {hasMenu && (
                       <Icon
@@ -256,7 +262,9 @@ export function Header() {
                     )}
                   </button>
 
-                  {/* SEPARATOR */}
+                  {/* =================================================
+                      NAV SEPARATOR
+                      ================================================= */}
 
                   {!isLast && (
                     <span className="mx-1 text-slate-200">
@@ -268,7 +276,9 @@ export function Header() {
             })}
           </nav>
 
-          {/* ================= MOBILE BUTTON ================= */}
+          {/* =================================================
+              MOBILE MENU BUTTON
+              ================================================= */}
 
           <div className="flex items-center gap-3">
             <button
@@ -298,25 +308,42 @@ export function Header() {
         </div>
       </Container>
 
-      {/* ================= MEGA MENU ================= */}
+      {/* =====================================================
+          MEGA MENU
+
+          One-column:
+          - About Us
+          - Creative & Design
+
+          => compact ~340px
+
+          Multi-column:
+          - Digital Marketing
+          - Web & App Development
+          - Industries
+
+          => full viewport/header width
+          ===================================================== */}
 
       {activeItem && (
         <MegaMenuPanel
           item={activeItem}
           left={compactLeft}
-          onNavigate={() =>
-            setOpenIndex(null)
-          }
+          onNavigate={() => {
+            setOpenIndex(null);
+          }}
         />
       )}
 
-      {/* ================= MOBILE NAV ================= */}
+      {/* =====================================================
+          MOBILE NAVIGATION
+          ===================================================== */}
 
       {mobileOpen && (
         <MobileNav
-          onNavigate={() =>
-            setMobileOpen(false)
-          }
+          onNavigate={() => {
+            setMobileOpen(false);
+          }}
         />
       )}
     </header>
