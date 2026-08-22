@@ -26,7 +26,7 @@ export const primaryNav: MegaMenuItem[] = [
     columns: [
       {
         heading: "About Us",
-        icon: "info",
+        icon: "/icons/about-us-.svg",
         links: [
           { label: "Company Overview", href: "/about/company-overview" },
           { label: "Our Team (Life @ Hover)", href: "/about/our-team" },
@@ -129,7 +129,7 @@ export const primaryNav: MegaMenuItem[] = [
     columns: [
       {
         heading: "Website Development",
-        icon: "code",
+        icon: "/icons/website-development.svg",
         links: [
           { label: "Custom Web Development", href: "/web-app-development/custom-web-development" },
           { label: "WordPress Development", href: "/web-app-development/wordpress-development" },
@@ -146,7 +146,7 @@ export const primaryNav: MegaMenuItem[] = [
       },
       {
         heading: "Website Designing",
-        icon: "design",
+        icon: "/icons/website-designing.svg",
         links: [
           { label: "Website Design", href: "/web-app-development/website-design" },
           { label: "Website Redesign", href: "/web-app-development/website-redesign" },
@@ -156,7 +156,7 @@ export const primaryNav: MegaMenuItem[] = [
       },
       {
         heading: "Ecommerce",
-        icon: "ecommerce",
+        icon: "/icons/ecommerce.svg",
         links: [
           { label: "Shopify", href: "/web-app-development/shopify" },
           { label: "WooCommerce", href: "/web-app-development/woocommerce" },
@@ -166,7 +166,7 @@ export const primaryNav: MegaMenuItem[] = [
       },
       {
         heading: "Mobile Apps",
-        icon: "mobile",
+        icon: "/icons/mobile-apps.svg",
         links: [
           { label: "Mobile App Development", href: "/web-app-development/mobile-app-development" },
           { label: "Android App Development", href: "/web-app-development/android-app-development" },
@@ -181,7 +181,7 @@ export const primaryNav: MegaMenuItem[] = [
     columns: [
       {
         heading: "Creative Studio",
-        icon: "creative",
+        icon: "/icons/creative-studio.svg",
         links: [
           { label: "Logo Design", href: "/creative-design/logo-design" },
           { label: "Graphic Design", href: "/creative-design/graphic-design" },
@@ -199,7 +199,7 @@ export const primaryNav: MegaMenuItem[] = [
     columns: [
       {
         heading: "Healthcare & Wellness",
-        icon: "health",
+        icon: "/icons/healthcare-wellness.svg",
         links: [
           { label: "Hospitals", href: "/industries/hospitals" },
           { label: "Dental Clinics", href: "/industries/dental-clinics" },
@@ -209,7 +209,7 @@ export const primaryNav: MegaMenuItem[] = [
       },
       {
         heading: "Professional Services",
-        icon: "professional",
+        icon: "/icons/professional-services.svg",
         links: [
           { label: "Law Firms", href: "/industries/law-firms" },
           { label: "Accounting & Finance", href: "/industries/accounting-finance" },
@@ -222,7 +222,7 @@ export const primaryNav: MegaMenuItem[] = [
       },
       {
         heading: "Education & Hospitality",
-        icon: "education",
+        icon: "/icons/education-hospitality-modern.svg",
         links: [
           { label: "Schools", href: "/industries/schools" },
           { label: "Colleges & Universities", href: "/industries/colleges-universities" },
@@ -235,7 +235,7 @@ export const primaryNav: MegaMenuItem[] = [
       },
       {
         heading: "Real Estate & Industrial",
-        icon: "realestate",
+        icon: "/icons/real-estate-industrial.svg",
         links: [
           { label: "Real Estate", href: "/industries/real-estate" },
           { label: "Construction", href: "/industries/construction" },
@@ -247,7 +247,7 @@ export const primaryNav: MegaMenuItem[] = [
       },
       {
         heading: "Retail & Lifestyle",
-        icon: "retail",
+        icon: "/icons/retail-lifestyle.svg",
         links: [
           { label: "Ecommerce", href: "/industries/ecommerce" },
           { label: "Retail Stores", href: "/industries/retail-stores" },
