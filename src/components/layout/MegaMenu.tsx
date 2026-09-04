@@ -26,9 +26,7 @@ export const MegaMenuPanel = forwardRef<
       }`}
     >
       <div
-        className={`border-t-[3px] border-[var(--color-primary)] bg-white shadow-[0_15px_35px_-12px_rgba(15,23,42,0.16)] ${
-          isCompact ? "rounded-xl" : "rounded-b-xl"
-        }`}
+        className="border-t-[3px] border-[var(--color-primary)] bg-white shadow-[0_15px_35px_-12px_rgba(15,23,42,0.16)] rounded-none"
       >
         <div
           className={

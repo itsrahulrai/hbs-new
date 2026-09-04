@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none">
+  <g stroke="#FB343B" stroke-width="18" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- Simple office / company -->
+    <rect x="92" y="92" width="328" height="328" rx="48" fill="#FB343B" fill-opacity=".025"/>
+
+    <!-- Building -->
+    <path d="M160 384V166L256 112L352 166V384"/>
+    <path d="M132 384H380"/>
+
+    <!-- Windows -->
+    <rect x="188" y="190" width="42" height="42" rx="8"/>
+    <rect x="282" y="190" width="42" height="42" rx="8"/>
+    <rect x="188" y="264" width="42" height="42" rx="8"/>
+    <rect x="282" y="264" width="42" height="42" rx="8"/>
+
+    <!-- Entrance -->
+    <path d="M236 384V330C236 312 245 302 256 302C267 302 276 312 276 330V384"/>
+
+    <!-- Small people mark -->
+    <circle cx="256" cy="58" r="20" fill="#FB343B" stroke="none"/>
+    <path d="M248 58L254 64L266 51" stroke="white" stroke-width="7"/>
+
+  </g>
+</svg>

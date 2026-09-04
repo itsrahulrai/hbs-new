@@ -1,0 +1,17 @@
+<svg width="512" height="512" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <g fill="#EF3037">
+    <!-- top diamond / lid -->
+    <path d="M64 13 105 36 64 59 23 36 64 13Z"/>
+    <!-- left box face -->
+    <path d="M23 36 64 59v48L23 84V36Z"/>
+    <!-- right box face -->
+    <path d="m64 59 41-23v48l-41 23V59Z"/>
+  </g>
+  <!-- box fold / cube details -->
+  <g fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M64 59 47 49 64 39l17 10-17 10Z"/>
+    <path d="M64 59v21"/>
+    <path d="M64 80 46 70"/>
+    <path d="M64 80 82 70"/>
+  </g>
+</svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <title>Clean Social Media Marketing Icon</title>
+
+  <!-- Minimal connecting lines -->
+  <g fill="none" stroke="#EF3037" stroke-width="10" stroke-linecap="round" opacity=".5">
+    <path d="M286 286 L405 405"/>
+    <path d="M738 286 L619 405"/>
+    <path d="M286 738 L405 619"/>
+    <path d="M738 738 L619 619"/>
+  </g>
+
+  <!-- Instagram -->
+  <g fill="none" stroke="#EF3037" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="115" y="115" width="180" height="180" rx="42" stroke-width="16"/>
+    <rect x="160" y="160" width="90" height="90" rx="25" stroke-width="14"/>
+    <circle cx="205" cy="205" r="22" stroke-width="13"/>
+    <circle cx="238" cy="172" r="8" fill="#EF3037" stroke="none"/>
+  </g>
+
+  <!-- Facebook -->
+  <g fill="none" stroke="#EF3037" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="729" y="115" width="180" height="180" rx="42" stroke-width="16"/>
+    <path d="M820 255 V180 C820 161 829 151 847 151 H866" stroke-width="17"/>
+    <path d="M791 205 H857" stroke-width="17"/>
+  </g>
+
+  <!-- YouTube -->
+  <g fill="none" stroke="#EF3037" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="115" y="729" width="180" height="180" rx="42" stroke-width="16"/>
+    <rect x="153" y="785" width="104" height="68" rx="20" stroke-width="14"/>
+    <path d="M194 800 L194 838 L226 819 Z" fill="#EF3037" stroke="none"/>
+  </g>
+
+  <!-- LinkedIn -->
+  <g fill="none" stroke="#EF3037" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="729" y="729" width="180" height="180" rx="42" stroke-width="16"/>
+    <circle cx="778" cy="782" r="8" fill="#EF3037" stroke="none"/>
+    <path d="M778 808 V851 M807 851 V827 C807 812 818 806 830 806 C845 806 851 816 851 831 V851 M807 827 V851" stroke-width="13"/>
+  </g>
+
+  <!-- Simple central megaphone -->
+  <g stroke="#EF3037" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M380 435 H475 L650 355 V669 L475 589 H380
+             C337 589 303 555 303 512
+             C303 469 337 435 380 435Z"
+          fill="#EF3037" stroke-width="16"/>
+
+    <!-- Front edge -->
+    <path d="M650 355 V669" fill="none" stroke-width="16"/>
+
+    <!-- Handle -->
+    <path d="M432 589 V728 C432 752 451 770 475 770 H486
+             C510 770 529 752 529 728 V603"
+          fill="#fff" stroke-width="16"/>
+
+    <!-- Sound waves -->
+    <g fill="none" stroke-width="15">
+      <path d="M710 425 L765 390"/>
+      <path d="M725 512 H795"/>
+      <path d="M710 599 L765 634"/>
+    </g>
+  </g>
+</svg>

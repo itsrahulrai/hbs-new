@@ -41,6 +41,7 @@
   --color-info: #1c64c9;
 
   /* Type scale — fluid with clamp() */
+  --font-poppins: "Poppins", "Inter", sans-serif;
   --font-display: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
   --font-body: "Inter", system-ui, -apple-system, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, monospace;
@@ -209,6 +210,15 @@ a {
   }
   to {
     stroke-dashoffset: 0;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }
 

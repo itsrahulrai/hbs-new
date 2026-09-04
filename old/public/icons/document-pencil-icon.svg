@@ -1,0 +1,17 @@
+<svg width="512" height="512" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <g fill="none" stroke="#EF3037" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- document -->
+    <path d="M27 12h58a7 7 0 0 1 7 7v90a7 7 0 0 1-7 7H27a7 7 0 0 1-7-7V19a7 7 0 0 1 7-7Z"/>
+    <!-- header box -->
+    <rect x="32" y="25" width="25" height="12" rx="2"/>
+    <!-- text lines -->
+    <path d="M32 48h42"/>
+    <path d="M32 60h39"/>
+    <path d="M32 72h26"/>
+    <path d="M32 84h22"/>
+    <!-- pencil -->
+    <path d="m68 91 25-25 11 11-25 25-15 4z"/>
+    <path d="m93 66 5-5a5 5 0 0 1 7 0l3 3a5 5 0 0 1 0 7l-5 5"/>
+    <path d="m68 91 11 11"/>
+  </g>
+</svg>

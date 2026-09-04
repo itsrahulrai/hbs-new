@@ -5,7 +5,7 @@ import { ClientLogos } from "@/components/shared/ClientLogos";
 import { StatBar } from "@/components/shared/StatBar";
 import { trustBanner } from "@/data/banners";
 
-const statIcons = ["trophy", "people", "globe", "star", "renew", "trend"];
+const statIcons = ["star", "trophy", "renew", "people"];
 
 export function TrustBanner() {
   const stats = trustBanner.stats.map((stat, i) => ({

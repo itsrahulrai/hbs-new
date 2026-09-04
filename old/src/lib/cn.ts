@@ -1,0 +1,4 @@
+/** Minimal className combiner — avoids pulling in an extra dependency. */
+export function cn(...values: Array<string | false | null | undefined>): string {
+  return values.filter(Boolean).join(" ");
+}

@@ -23,8 +23,32 @@ export function Header() {
   const [compactLeft, setCompactLeft] = useState(0);
 
   const headerRef = useRef<HTMLElement>(null);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const itemRefs = useRef<Array<HTMLDivElement | null>>([]);
+
+  const cancelClose = () => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+      timeoutRef.current = null;
+    }
+  };
+
+  const scheduleClose = (delay = 180) => {
+    cancelClose();
+    timeoutRef.current = setTimeout(() => {
+      setOpenIndex(null);
+    }, delay);
+  };
+
+  const handleItemHover = (index: number, hasMenu: boolean) => {
+    cancelClose();
+    if (hasMenu) {
+      setOpenIndex(index);
+    } else {
+      setOpenIndex(null);
+    }
+  };
 
   /**
    * Close menus:
@@ -54,6 +78,9 @@ export function Header() {
     return () => {
       document.removeEventListener("keydown", onKeyDown);
       document.removeEventListener("mousedown", onClickOutside);
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
     };
   }, []);
 
@@ -158,6 +185,8 @@ export function Header() {
   return (
     <header
       ref={headerRef}
+      onMouseEnter={cancelClose}
+      onMouseLeave={() => scheduleClose(180)}
       className="sticky top-0 z-50 border-b border-slate-100 bg-white"
     >
       {/* =====================================================
@@ -170,7 +199,9 @@ export function Header() {
               LOGO
               ================================================= */}
 
-          <Logo />
+          <div onMouseEnter={() => handleItemHover(-1, false)}>
+            <Logo />
+          </div>
 
           {/* =================================================
               DESKTOP NAVIGATION
@@ -198,58 +229,32 @@ export function Header() {
                   className="flex shrink-0 items-center"
                 >
                   {/* =================================================
-                      NAV BUTTON
+                      NAV ITEM (BUTTON OR LINK)
                       ================================================= */}
+                  {hasMenu ? (
+                    <button
+                      type="button"
+                      className="group flex items-center gap-1 whitespace-nowrap rounded-lg px-5 py-2.5 text-[15px] font-semibold tracking-[0.2px] text-slate-800 transition-colors duration-200 hover:text-[var(--color-primary)]"
+                      aria-expanded={isOpen}
+                      aria-haspopup="true"
+                      onClick={() => {
+                        setOpenIndex(isOpen ? null : index);
+                      }}
+                      onMouseEnter={() => {
+                        handleItemHover(index, true);
+                      }}
+                    >
+                      <span className="relative inline-flex pb-2">
+                        {item.label}
+                        <span
+                          className={`absolute left-0 -bottom-2 h-[2px] rounded-full bg-[var(--color-primary)] transition-all duration-300 ${
+                            isOpen
+                              ? "w-full"
+                              : "w-0 group-hover:w-full"
+                          }`}
+                        />
+                      </span>
 
-                  <button
-                    type="button"
-                    className="group flex items-center gap-1 whitespace-nowrap rounded-lg px-5 py-2.5 text-[15px] font-semibold tracking-[0.2px] text-slate-800 transition-colors duration-200 hover:text-[var(--color-primary)]"
-                    aria-expanded={isOpen}
-                    aria-haspopup={
-                      hasMenu ? "true" : undefined
-                    }
-                    onClick={() => {
-                      if (!hasMenu) return;
-
-                      setOpenIndex(
-                        isOpen ? null : index,
-                      );
-                    }}
-                    onMouseEnter={() => {
-                      if (hasMenu) {
-                        setOpenIndex(index);
-                      }
-                    }}
-                  >
-                    {/* =================================================
-                        MENU LABEL
-                        ================================================= */}
-
-                    <span className="relative inline-flex pb-2">
-                      {hasMenu ? (
-                        item.label
-                      ) : (
-                        <Link href={item.href}>
-                          {item.label}
-                        </Link>
-                      )}
-
-                      {/* ACTIVE UNDERLINE */}
-
-                      <span
-                        className={`absolute left-0 -bottom-2 h-[2px] rounded-full bg-[var(--color-primary)] transition-all duration-300 ${
-                          isOpen
-                            ? "w-full"
-                            : "w-0 group-hover:w-full"
-                        }`}
-                      />
-                    </span>
-
-                    {/* =================================================
-                        DROPDOWN CHEVRON
-                        ================================================= */}
-
-                    {hasMenu && (
                       <Icon
                         name="chevronDown"
                         size={14}
@@ -259,8 +264,21 @@ export function Header() {
                             : "text-slate-400 group-hover:text-[var(--color-primary)]"
                         }`}
                       />
-                    )}
-                  </button>
+                    </button>
+                  ) : (
+                    <Link
+                      href={item.href}
+                      className="group flex items-center gap-1 whitespace-nowrap rounded-lg px-5 py-2.5 text-[15px] font-semibold tracking-[0.2px] text-slate-800 transition-colors duration-200 hover:text-[var(--color-primary)]"
+                      onMouseEnter={() => {
+                        handleItemHover(index, false);
+                      }}
+                    >
+                      <span className="relative inline-flex pb-2">
+                        {item.label}
+                        <span className="absolute left-0 -bottom-2 h-[2px] w-0 rounded-full bg-[var(--color-primary)] transition-all duration-300 group-hover:w-full" />
+                      </span>
+                    </Link>
+                  )}
 
                   {/* =================================================
                       NAV SEPARATOR
