@@ -58,15 +58,15 @@ export default function HomePage() {
       </LazyMount>
 
       <LazyMount minHeight={520} fallback={<SectionFallback height={460} />}>
+        <ReviewsSection />
+      </LazyMount>
+
+      <LazyMount minHeight={520} fallback={<SectionFallback height={460} />}>
         <GrowthSystemSection />
       </LazyMount>
 
       <LazyMount minHeight={560} fallback={<SectionFallback height={500} />}>
         <ServicesDeepDive />
-      </LazyMount>
-
-      <LazyMount minHeight={520} fallback={<SectionFallback height={460} />}>
-        <ReviewsSection />
       </LazyMount>
 
       <LazyMount minHeight={520} fallback={<SectionFallback height={460} />}>

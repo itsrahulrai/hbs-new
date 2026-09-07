@@ -90,7 +90,7 @@ export function GrowSmarterCTA() {
             viewport={{ once: false, amount: 0.15 }}
             transition={{ duration: 0.55, delay: 0.08, ease: "easeOut" }}
             style={{ color: "#ffffff" }}
-            className="mt-2.5 sm:mt-3 font-display text-[20px] sm:text-[24px] lg:text-[27px] xl:text-[29px] font-extrabold tracking-[-0.025em] text-white !text-white leading-[1.3] sm:leading-[1.28]"
+            className="mt-2.5 sm:mt-3 font-display text-[20px] sm:text-[24px] lg:text-[27px] xl:text-[29px] font-bold tracking-[-0.025em] text-white !text-white leading-[1.3] sm:leading-[1.28]"
           >
             Ready to Grow Smarter in the Digital World?
           </motion.h2>

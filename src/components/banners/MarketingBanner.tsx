@@ -129,15 +129,13 @@ export function MarketingBanner() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false, amount: 0.15 }}
               transition={{ duration: 0.55, delay: 0.08, ease: "easeOut" }}
-              className="mt-3 sm:mt-3.5 font-display text-[19px] sm:text-[24px] lg:text-[27px] xl:text-[29px] font-extrabold tracking-[-0.025em] text-[#0b132b] leading-[1.24] sm:leading-[1.28] [text-wrap:balance]"
+              className="mt-3 sm:mt-3.5 font-display text-[20px] sm:text-[25px] lg:text-[28px] xl:text-[30px] font-bold tracking-[-0.025em] text-[#0b132b] leading-[1.26] sm:leading-[1.28] [text-wrap:balance]"
             >
               <span className="block text-[#0b132b]">Digital Marketing That</span>
               <span className="inline-flex items-center gap-2 whitespace-nowrap mt-1">
                 <span>Drives</span>
-                <span className="relative inline-flex items-center justify-center -rotate-1 sm:-rotate-2 px-2.5 sm:px-3.5 py-0.5 rounded-lg sm:rounded-xl bg-gradient-to-r from-rose-100/90 via-red-50 to-rose-100/70 border border-rose-200/80 shadow-[0_2px_10px_rgba(229,35,27,0.1)] transition-transform duration-300 hover:rotate-0 hover:scale-105 align-middle">
-                  <span className="italic font-black text-[#e5231b] tracking-tight">
-                    Real Growth
-                  </span>
+                <span className="text-[#e5231b]">
+                  Real Growth
                 </span>
               </span>
             </motion.h2>

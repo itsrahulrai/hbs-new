@@ -1,7 +1,7 @@
 export const desktopHeroBanners = [
-  "/images/banner/banner4.png",
-  "/images/banner/b22.png",
-  "/images/banner/b11.png",
+  "/images/banner/slider-1.png",
+  "/images/banner/slider-2.png",
+  "/images/banner/slider-3.png",
 ];
 
 export const mobileHeroBanners = [
@@ -107,7 +107,7 @@ export const aboutOverview = {
 
 export const reviewsSection = {
   eyebrow: "What Our Clients Say",
-  title: "Real Trust. Real Results.",
+  title: "Trusted by Businesses. Proven by Real Results.",
   description:
     "Our clients trust us to turn their digital goals into meaningful outcomes. From improving online visibility and generating better opportunities to building stronger digital experiences, we work closely with businesses to create solutions that deliver value beyond the project.",
   googleRating: { value: "4.9", reviews: "120+ Reviews" },

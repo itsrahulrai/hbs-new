@@ -13,6 +13,18 @@ export function CTASection({
   ctaPrimary: CTA;
   ctaSecondary?: CTA;
 }) {
+  let mainTitle = title;
+  let badgeText = "";
+  let suffixText = "";
+  if (title && title.includes("[") && title.includes("]")) {
+    const match = title.match(/^(.*?)\[(.*?)\](.*)$/);
+    if (match) {
+      mainTitle = match[1]?.trim() ?? "";
+      badgeText = match[2]?.trim() ?? "";
+      suffixText = match[3]?.trim() ?? "";
+    }
+  }
+
   return (
     <section className="section-space">
       <Container>
@@ -26,8 +38,16 @@ export function CTASection({
             }}
           />
           <div className="relative">
-            <h2 className="font-display text-[var(--fs-3xl)] font-bold text-white">
-              {title}
+            <h2 className="font-display text-[22px] sm:text-[28px] lg:text-[32px] font-bold text-white tracking-[-0.025em]">
+              {badgeText ? (
+                <>
+                  {mainTitle && <span>{mainTitle} </span>}
+                  <span className="text-[#e5231b]">{badgeText}</span>
+                  {suffixText && <span> {suffixText}</span>}
+                </>
+              ) : (
+                title
+              )}
             </h2>
             {description && (
               <p className="mx-auto mt-4 max-w-xl text-[var(--fs-lg)] text-white/70">

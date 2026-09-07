@@ -48,14 +48,12 @@ export function GrowthSystemSection() {
             </div>
 
             {/* Premium High-Impact Headline */}
-            <h2 className="mt-5 font-display text-xl sm:text-2xl lg:text-[32px] xl:text-[35px] font-extrabold tracking-[-0.025em] text-[#0b132b] leading-[1.3]">
+            <h2 className="mt-5 font-display text-xl sm:text-2xl lg:text-[32px] xl:text-[35px] font-bold tracking-[-0.025em] text-[#0b132b] leading-[1.3]">
               <span className="block text-[#0b132b]">Digital Growth Rarely</span>
               <span className="inline-flex items-center gap-2 whitespace-nowrap mt-1">
                 <span>Comes From</span>
-                <span className="relative inline-flex items-center justify-center -rotate-2 px-3 py-0.5 rounded-xl bg-gradient-to-r from-rose-100/90 via-red-50 to-rose-100/70 border border-rose-200/80 shadow-[0_2px_12px_rgba(229,35,27,0.12)] transition-transform hover:rotate-0">
-                  <span className="italic font-black text-[#e5231b] tracking-tight">
-                    One Channel
-                  </span>
+                <span className="text-[#e5231b]">
+                  One Channel
                 </span>
               </span>
             </h2>
