@@ -73,7 +73,7 @@ const servicesList: ServiceItem[] = [
       iconShadow: "shadow-[0_8px_20px_rgba(244,63,94,0.35)]",
       stageBg: "bg-gradient-to-b from-rose-50/90 via-rose-50/30 to-white",
       stageBorder: "border-rose-100/80",
-      tagStyle: "bg-[#fff0f0] text-[#e04b4b]",
+      tagStyle: "bg-[#f85153] text-white hover:bg-[#e5231b] shadow-xs",
       actionText: "text-[#e04b4b] hover:text-[#c93030]",
       circleBtnStyle: "bg-[#ffe4e4] text-[#e04b4b] hover:bg-[#e04b4b] hover:text-white",
     },
@@ -102,7 +102,7 @@ const servicesList: ServiceItem[] = [
       iconShadow: "shadow-[0_8px_20px_rgba(14,165,233,0.35)]",
       stageBg: "bg-gradient-to-b from-sky-50/90 via-sky-50/30 to-white",
       stageBorder: "border-sky-100/80",
-      tagStyle: "bg-[#f0f8ff] text-[#0284c7]",
+      tagStyle: "bg-[#0284c7] text-white hover:bg-[#0369a1] shadow-xs",
       actionText: "text-[#0284c7] hover:text-[#0369a1]",
       circleBtnStyle: "bg-[#e0f2fe] text-[#0284c7] hover:bg-[#0284c7] hover:text-white",
     },
@@ -131,7 +131,7 @@ const servicesList: ServiceItem[] = [
       iconShadow: "shadow-[0_8px_20px_rgba(245,158,11,0.35)]",
       stageBg: "bg-gradient-to-b from-amber-50/90 via-amber-50/30 to-white",
       stageBorder: "border-amber-100/80",
-      tagStyle: "bg-[#fffbeb] text-[#d97706]",
+      tagStyle: "bg-[#ea580c] text-white hover:bg-[#c2410c] shadow-xs",
       actionText: "text-[#d97706] hover:text-[#b45309]",
       circleBtnStyle: "bg-[#fef3c7] text-[#d97706] hover:bg-[#d97706] hover:text-white",
     },
@@ -160,7 +160,7 @@ const servicesList: ServiceItem[] = [
       iconShadow: "shadow-[0_8px_20px_rgba(139,92,246,0.35)]",
       stageBg: "bg-gradient-to-b from-purple-50/90 via-purple-50/30 to-white",
       stageBorder: "border-purple-100/80",
-      tagStyle: "bg-[#faf5ff] text-[#8b5cf6]",
+      tagStyle: "bg-[#8b5cf6] text-white hover:bg-[#7c3aed] shadow-xs",
       actionText: "text-[#8b5cf6] hover:text-[#7c3aed]",
       circleBtnStyle: "bg-[#f3e8ff] text-[#8b5cf6] hover:bg-[#8b5cf6] hover:text-white",
     },
@@ -189,7 +189,7 @@ const servicesList: ServiceItem[] = [
       iconShadow: "shadow-[0_8px_20px_rgba(217,70,239,0.35)]",
       stageBg: "bg-gradient-to-b from-fuchsia-50/90 via-fuchsia-50/30 to-white",
       stageBorder: "border-fuchsia-100/80",
-      tagStyle: "bg-[#fdf4ff] text-[#c026d3]",
+      tagStyle: "bg-[#d946ef] text-white hover:bg-[#c026d3] shadow-xs",
       actionText: "text-[#c026d3] hover:text-[#a21caf]",
       circleBtnStyle: "bg-[#fae8ff] text-[#c026d3] hover:bg-[#c026d3] hover:text-white",
     },
@@ -218,7 +218,7 @@ const servicesList: ServiceItem[] = [
       iconShadow: "shadow-[0_8px_20px_rgba(16,185,129,0.35)]",
       stageBg: "bg-gradient-to-b from-emerald-50/90 via-emerald-50/30 to-white",
       stageBorder: "border-emerald-100/80",
-      tagStyle: "bg-[#ecfdf5] text-[#059669]",
+      tagStyle: "bg-[#059669] text-white hover:bg-[#047857] shadow-xs",
       actionText: "text-[#059669] hover:text-[#047857]",
       circleBtnStyle: "bg-[#d1fae5] text-[#059669] hover:bg-[#059669] hover:text-white",
     },
@@ -247,7 +247,7 @@ const servicesList: ServiceItem[] = [
       iconShadow: "shadow-[0_8px_20px_rgba(6,182,212,0.35)]",
       stageBg: "bg-gradient-to-b from-teal-50/90 via-teal-50/30 to-white",
       stageBorder: "border-teal-100/80",
-      tagStyle: "bg-[#f0fdfa] text-[#0d9488]",
+      tagStyle: "bg-[#0891b2] text-white hover:bg-[#0e7490] shadow-xs",
       actionText: "text-[#0d9488] hover:text-[#0f766e]",
       circleBtnStyle: "bg-[#ccfbf1] text-[#0d9488] hover:bg-[#0d9488] hover:text-white",
     },
@@ -276,7 +276,7 @@ const servicesList: ServiceItem[] = [
       iconShadow: "shadow-[0_8px_20px_rgba(244,63,94,0.35)]",
       stageBg: "bg-gradient-to-b from-rose-50/90 via-rose-50/30 to-white",
       stageBorder: "border-rose-100/80",
-      tagStyle: "bg-[#fff0f3] text-[#e11d48]",
+      tagStyle: "bg-[#f43f5e] text-white hover:bg-[#e11d48] shadow-xs",
       actionText: "text-[#e11d48] hover:text-[#be123c]",
       circleBtnStyle: "bg-[#ffe4e6] text-[#e11d48] hover:bg-[#e11d48] hover:text-white",
     },
@@ -515,12 +515,12 @@ export function ServicesOverview() {
                 viewport={{ once: false, amount: 0.15 }}
                 transition={{ duration: 0.5, delay: 0.04 * index, ease: "easeOut" }}
                 whileHover={{ y: -6, transition: { duration: 0.25 } }}
-                className="group relative flex flex-col justify-between rounded-xl sm:rounded-2xl bg-white p-5 sm:p-5.5 shadow-[0_12px_32px_rgba(0,0,0,0.18)] hover:shadow-[0_24px_50px_rgba(0,0,0,0.28)] transition-all duration-300 snap-start shrink-0 w-[80vw] max-w-[315px] sm:w-[calc(50%-12px)] sm:max-w-none lg:w-[calc(25%-18px)] h-auto min-h-[420px] overflow-hidden"
+                className="group relative flex flex-col justify-between rounded-xl sm:rounded-2xl bg-white p-5.5 sm:p-6 lg:p-6.5 shadow-[0_12px_32px_rgba(0,0,0,0.18)] hover:shadow-[0_24px_50px_rgba(0,0,0,0.28)] transition-all duration-300 snap-start shrink-0 w-[80vw] max-w-[315px] sm:w-[calc(50%-12px)] sm:max-w-none lg:w-[calc(25%-18px)] h-auto overflow-hidden"
               >
                 {/* Top Subtle Hover Highlight Line */}
                 <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent ${service.theme.lineColor} to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300`} />
 
-                <div className="flex flex-col h-full relative z-10">
+                <div className="flex flex-col relative z-10">
                   {/* Card Header: Step Badge + Line + Category */}
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2">
@@ -530,16 +530,16 @@ export function ServicesOverview() {
                       <span className={`h-[2px] w-6 rounded-full ${service.theme.lineColor}`} />
                     </div>
 
-                    <span className="inline-flex items-center gap-1.5 font-display text-[10.5px] sm:text-[11px] font-bold uppercase tracking-widest text-slate-400 group-hover:text-slate-600 transition-colors">
-                      <span className={`h-1.5 w-1.5 rounded-full ${service.theme.lineColor} opacity-70 group-hover:opacity-100`} />
+                    <span className="inline-flex items-center gap-1.5 font-display text-[11px] font-bold uppercase tracking-wider text-slate-500 group-hover:text-slate-700 transition-colors">
+                      <span className={`h-1.5 w-1.5 rounded-full ${service.theme.lineColor} opacity-80 group-hover:opacity-100`} />
                       {service.category}
                     </span>
                   </div>
 
-                  {/* Sleek Compact Icon (Directly on card, no separate outer background box) */}
-                  <div className="my-4 flex items-center justify-center">
-                    <div className={`flex h-12 w-12 sm:h-13 sm:w-13 items-center justify-center rounded-xl ${service.theme.iconBg} text-white ${service.theme.iconShadow} transition-all duration-300 group-hover:scale-110 group-hover:rotate-2`}>
-                      <service.primaryIcon className="w-6 h-6 sm:w-6.5 sm:h-6.5" strokeWidth={2.2} />
+                  {/* Sleek Compact Icon */}
+                  <div className="mt-5 mb-5 flex items-center justify-center">
+                    <div className={`flex h-11 w-11 sm:h-12 sm:w-12 items-center justify-center rounded-xl ${service.theme.iconBg} text-white ${service.theme.iconShadow} transition-all duration-300 group-hover:scale-110 group-hover:rotate-2`}>
+                      <service.primaryIcon className="w-5.5 h-5.5 sm:w-6 sm:h-6" strokeWidth={2.2} />
                     </div>
                   </div>
 
@@ -551,16 +551,19 @@ export function ServicesOverview() {
                   </h3>
 
                   {/* Description */}
-                  <p className="mt-1.5 text-[12.5px] sm:text-[13px] text-slate-500 leading-relaxed">
+                  <p className="mt-2.5 text-[13px] sm:text-[13.5px] text-[#475569] leading-relaxed text-left [text-wrap:pretty]">
                     {service.description}
                   </p>
 
+                  {/* Horizontal Divider Line */}
+                  <div className="my-4.5 sm:my-5 border-t border-slate-200" />
+
                   {/* Tags */}
-                  <div className="mt-auto pt-3.5 flex flex-wrap gap-1.5">
+                  <div className="flex flex-wrap gap-1.5 sm:gap-2">
                     {service.tags.map((tag) => (
                       <span
                         key={tag}
-                        className={`inline-block px-3 py-1 rounded-full text-[11px] font-medium leading-tight ${service.theme.tagStyle} whitespace-nowrap shadow-2xs transition-transform duration-200 hover:scale-105`}
+                        className={`inline-block px-3 py-1 rounded-sm text-[11.5px] sm:text-[12px] font-bold tracking-normal ${service.theme.tagStyle} whitespace-nowrap shadow-2xs transition-all duration-200 hover:scale-105`}
                       >
                         {tag}
                       </span>
@@ -569,10 +572,10 @@ export function ServicesOverview() {
                 </div>
 
                 {/* Footer Action Bar: Learn More + Animated Arrow + Action Button */}
-                <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between relative z-10">
+                <div className="mt-6 pt-4 border-t border-slate-200 flex items-center justify-between relative z-10">
                   <Link
                     href={service.href}
-                    className={`group/link flex items-center gap-1.5 text-xs sm:text-[13px] font-semibold ${service.theme.actionText} transition-colors`}
+                    className={`group/link flex items-center gap-1.5 text-xs sm:text-[13px] font-bold ${service.theme.actionText} transition-colors`}
                   >
                     <span>Learn More</span>
                     <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover/link:translate-x-1" />
@@ -598,51 +601,47 @@ export function ServicesOverview() {
         {/* FULL-WIDTH CLOSING CALLOUT: ONE PARTNER */}
         {/* ========================================================= */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.15 }}
-          transition={{ duration: 0.55, delay: 0.25, ease: "easeOut" }}
-          className="mt-8 sm:mt-10 relative overflow-hidden rounded-2xl border border-slate-200/90 bg-white/95 p-4 sm:p-5 lg:p-6 pl-4.5 sm:pl-6 shadow-2xs hover:shadow-xs transition-shadow"
+          transition={{ duration: 0.5, delay: 0.15, ease: "easeOut" }}
+          className="mt-8 sm:mt-10 relative overflow-hidden rounded-2xl border border-slate-200/90 bg-white/95 p-3.5 sm:p-4.5 pl-6 sm:pl-7 shadow-2xs hover:shadow-xs transition-shadow"
         >
           {/* Straight Vertical Red Accent Bar */}
-          <div className="absolute left-2.5 top-3.5 bottom-3.5 w-1.5 rounded-full bg-[#e5231b]" />
+          <div className="absolute left-2.5 top-3.5 bottom-3.5 w-1 rounded-full bg-[#e5231b]" />
 
-          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 sm:gap-5 pl-1.5 sm:pl-2">
+          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 sm:gap-6 pl-1 sm:pl-1.5 relative z-10">
             
-            <div className="flex items-start gap-3 sm:gap-3.5 max-w-4xl">
-              <span className="flex h-9 w-9 sm:h-10 sm:w-10 shrink-0 items-center justify-center rounded-xl bg-rose-50 text-[#e5231b] border border-rose-100 shadow-2xs mt-0.5">
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                </svg>
+            {/* Left Content Area */}
+            <div className="flex items-start gap-3 sm:gap-3.5 max-w-3xl">
+              <span className="flex h-9 w-9 sm:h-9.5 sm:w-9.5 shrink-0 items-center justify-center rounded-xl bg-rose-50 text-[#e5231b] border border-rose-100 shadow-2xs mt-0.5">
+                <TrendingUp className="w-4.5 h-4.5" strokeWidth={2.2} />
               </span>
-              <div className="space-y-1">
-                <h3 className="font-display text-[15px] sm:text-base lg:text-[17px] font-bold text-[#0b132b] tracking-tight">
-                  One Partner. Every Digital Capability You Need.
+
+              <div className="space-y-0.5 sm:space-y-1">
+                <h3 className="font-display text-[14.5px] sm:text-[15.5px] font-bold text-slate-900 tracking-tight">
+                  One Partner. Every Digital Capability.
                 </h3>
-                <p className="text-[13px] sm:text-[14px] lg:text-[14.5px] text-[#475569] leading-relaxed text-justify [text-align-last:left] [text-justify:inter-word] [text-wrap:pretty] break-normal hyphens-none">
-                  Your business may start with one requirement, but growth rarely stays within one channel. <strong className="font-semibold text-[#0f172a]">Hover Business Services LLP</strong> brings SEO, AI search, technology, marketing, content, and creative expertise together, so every part of your digital presence can work towards the same business objective.
+
+                <p className="text-[12.5px] sm:text-[13px] text-[#475569] leading-relaxed [text-wrap:pretty]">
+                  From <strong className="font-semibold text-slate-900">SEO and AI search to technology, marketing, content, and creative</strong>, we bring everything together to make your digital presence <strong className="font-semibold text-slate-900">seen, trusted, and built for growth.</strong>
                 </p>
               </div>
             </div>
 
-            {/* Action Buttons */}
-            <div className="flex flex-wrap items-center gap-2.5 sm:gap-3 shrink-0 pl-12 lg:pl-0">
-              <Link
-                href="/digital-marketing"
-                className="group inline-flex h-10 sm:h-11 items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#e5231b] via-[#ea3829] to-[#d81a12] px-4.5 sm:px-5 text-xs sm:text-[13px] font-bold tracking-wider text-white uppercase shadow-[0_4px_16px_rgba(229,35,27,0.28)] hover:shadow-[0_6px_22px_rgba(229,35,27,0.38)] active:scale-[0.98] transition-all cursor-pointer whitespace-nowrap"
-              >
-                <span>EXPLORE SERVICES</span>
-                <svg className="w-4 h-4 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
-              </Link>
-              
-              <Link
-                href="/contact"
-                className="inline-flex h-10 sm:h-11 items-center justify-center rounded-xl border border-slate-200 bg-slate-50 hover:bg-slate-100/80 px-4.5 sm:px-5 text-xs sm:text-[13px] font-bold tracking-wider text-[#0f172a] uppercase shadow-2xs active:scale-[0.98] transition-all cursor-pointer whitespace-nowrap"
-              >
-                FREE CONSULTATION
-              </Link>
+            {/* Right Growth Flow Badge */}
+            <div className="shrink-0 pl-12 lg:pl-0">
+              <div className="inline-flex flex-wrap items-center gap-1.5 sm:gap-2 px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-xl border border-slate-200/90 bg-slate-50/80 shadow-2xs text-[11px] sm:text-[12px] font-bold">
+                <span className="text-slate-900">Visibility</span>
+                <span className="text-slate-900">Seen</span>
+                <span className="text-rose-500 font-normal">→</span>
+                <span className="text-indigo-600">Engagement</span>
+                <span className="text-indigo-600">Trusted</span>
+                <span className="text-rose-500 font-normal">→</span>
+                <span className="text-amber-600">Conversion</span>
+                <span className="text-rose-500 font-normal">→</span>
+                <span className="text-emerald-600">Growth</span>
+              </div>
             </div>
 
           </div>
