@@ -89,16 +89,10 @@ export function GrowSmarterCTA() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0.15 }}
             transition={{ duration: 0.55, delay: 0.08, ease: "easeOut" }}
-            className="mt-2.5 sm:mt-3 font-display text-[20px] sm:text-[24px] lg:text-[27px] xl:text-[29px] font-extrabold tracking-[-0.025em] text-white leading-[1.3] sm:leading-[1.28]"
+            style={{ color: "#ffffff" }}
+            className="mt-2.5 sm:mt-3 font-display text-[20px] sm:text-[24px] lg:text-[27px] xl:text-[29px] font-extrabold tracking-[-0.025em] text-white !text-white leading-[1.3] sm:leading-[1.28]"
           >
-            <span className="inline-flex flex-wrap items-center gap-1.5 sm:gap-2">
-              <span className="text-white">Ready to Grow Smarter in the</span>
-              <span className="relative inline-flex items-center justify-center -rotate-1 sm:-rotate-2 px-2.5 sm:px-3.5 py-0.5 rounded-lg sm:rounded-xl bg-white border border-white shadow-[0_2px_12px_rgba(0,0,0,0.18)] transition-transform duration-300 hover:rotate-0 hover:scale-105 align-middle">
-                <span className="italic font-black text-[#970205] tracking-tight whitespace-nowrap">
-                  Digital World?
-                </span>
-              </span>
-            </span>
+            Ready to Grow Smarter in the Digital World?
           </motion.h2>
 
           {/* Narrative text with high-contrast white typography in a single line */}
