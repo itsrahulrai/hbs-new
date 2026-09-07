@@ -9,7 +9,7 @@ import { CTASection } from "@/components/sections/CTASection";
 import { AboutOverviewSection } from "@/components/sections/AboutOverviewSection";
 import { GrowthSystemSection } from "@/components/sections/GrowthSystemSection";
 import { ServicesDeepDive } from "@/components/sections/ServicesDeepDive";
-import { WhyHoverSection } from "@/components/sections/WhyHoverSection";
+import { WhyChooseUsSection } from "@/components/sections/WhyHoverSection";
 import { ReviewsSection } from "@/components/sections/ReviewsSection";
 import { PainPointsSection } from "@/components/sections/PainPointsSection";
 import { ProcessSection } from "@/components/sections/ProcessSection";
@@ -54,15 +54,15 @@ export default function HomePage() {
       </LazyMount>
 
       <LazyMount minHeight={520} fallback={<SectionFallback height={460} />}>
+        <WhyChooseUsSection />
+      </LazyMount>
+
+      <LazyMount minHeight={520} fallback={<SectionFallback height={460} />}>
         <GrowthSystemSection />
       </LazyMount>
 
       <LazyMount minHeight={560} fallback={<SectionFallback height={500} />}>
         <ServicesDeepDive />
-      </LazyMount>
-
-      <LazyMount minHeight={520} fallback={<SectionFallback height={460} />}>
-        <WhyHoverSection />
       </LazyMount>
 
       <LazyMount minHeight={520} fallback={<SectionFallback height={460} />}>

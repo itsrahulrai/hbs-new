@@ -341,7 +341,7 @@ export function ServicesOverview() {
   };
 
   return (
-    <section className="relative overflow-hidden py-10 sm:py-12 lg:py-14 bg-gradient-to-b from-[#f8fafc] via-white to-[#f8fafc]">
+    <section className="relative overflow-hidden pt-4 sm:pt-5 lg:pt-6 pb-6 sm:pb-8 bg-gradient-to-b from-[#f8fafc] via-white to-[#f8fafc]">
       {/* Soft Ambient Background Elements */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
         <div className="absolute top-1/4 right-0 h-96 w-96 rounded-full bg-rose-100/30 blur-3xl" />
@@ -353,9 +353,9 @@ export function ServicesOverview() {
         {/* ========================================================= */}
         {/* HEADER SECTION: EYEBROW, TITLE & EDITORIAL INTRO */}
         {/* ========================================================= */}
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-2.5 sm:gap-3">
           
-          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3">
             <div className="flex flex-col items-start">
               {/* Eyebrow Pill */}
               <motion.div
@@ -380,7 +380,7 @@ export function ServicesOverview() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: false, amount: 0.15 }}
                 transition={{ duration: 0.55, delay: 0.08, ease: "easeOut" }}
-                className="mt-3 font-display text-[19px] sm:text-[24px] lg:text-[27px] xl:text-[29px] font-extrabold tracking-[-0.025em] text-[#0b132b] leading-[1.3] sm:leading-[1.28]"
+                className="mt-2.5 sm:mt-3 font-display text-[19px] sm:text-[24px] lg:text-[27px] xl:text-[29px] font-extrabold tracking-[-0.025em] text-[#0b132b] leading-[1.3] sm:leading-[1.28]"
               >
                 <span className="block text-[#0b132b]">Smart Digital Solutions</span>
                 <span className="inline-flex flex-wrap items-center gap-1.5 sm:gap-2 mt-1 sm:mt-1.5">
@@ -436,20 +436,16 @@ export function ServicesOverview() {
             </motion.div>
           </div>
 
-          {/* Narrative Editorial Paragraphs (Full Width) */}
+          {/* Narrative Editorial Text (Full Width) */}
           <motion.div
             initial={{ opacity: 0, y: 18 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0.15 }}
             transition={{ duration: 0.55, delay: 0.16, ease: "easeOut" }}
-            className="space-y-2 text-[14px] sm:text-[15.5px] text-[#475569] leading-[1.68] sm:leading-relaxed text-justify [text-align-last:left] [text-justify:inter-word] [text-wrap:pretty] break-normal hyphens-none w-full"
+            className="text-[14px] sm:text-[15.5px] text-[#475569] leading-[1.68] sm:leading-relaxed text-left [text-wrap:pretty] break-normal hyphens-none w-full"
           >
             <p>
-              Digital growth isn’t about doing more. It’s about doing the right things together.
-              At <strong className="font-semibold text-[#0f172a]">Hover Business Services LLP</strong>, we combine visibility, technology, creativity, performance, and strategy to help your business get noticed, build trust, generate opportunities, and grow.
-            </p>
-            <p>
-              Choose what you need—or bring it all together for one powerful digital strategy.
+              Digital growth isn’t about doing more. It’s about doing the right things together. At <strong className="font-semibold text-[#0f172a]">Hover Business Services LLP</strong>, we combine visibility, technology, creativity, performance, and strategy to help your business get noticed, build trust, generate opportunities, and grow. Choose what you need—or bring it all together for one powerful digital strategy.
             </p>
           </motion.div>
 
@@ -459,7 +455,7 @@ export function ServicesOverview() {
       {/* ========================================================= */}
       {/* SEPARATE FULL-WIDTH #970205 SECTION FOR SERVICE CARDS */}
       {/* ========================================================= */}
-      <div className="relative mt-8 sm:mt-10 w-full bg-gradient-to-r from-[#970205] via-[#a80b0f] to-[#800103] py-6 sm:py-8 lg:py-10 shadow-[inset_0_2px_12px_rgba(0,0,0,0.15)] overflow-hidden">
+      <div className="relative mt-5 sm:mt-6 w-full bg-gradient-to-r from-[#970205] via-[#a80b0f] to-[#800103] py-6 sm:py-8 lg:py-10 shadow-[inset_0_2px_12px_rgba(0,0,0,0.15)] overflow-hidden">
         
         {/* Luminous Glow Ambient Spheres */}
         <div className="pointer-events-none absolute -top-24 right-[5%] h-80 w-80 rounded-full bg-white/10 blur-3xl" />
