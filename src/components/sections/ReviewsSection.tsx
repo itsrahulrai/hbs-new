@@ -125,23 +125,23 @@ function GoogleIcon({ className = "w-6 h-6" }: { className?: string }) {
   );
 }
 
-// Authentic Real World & India Map Graphic (public/images/mapss.png) - Fully Visible
+// Authentic Real World & India Map Graphic (public/images/map2.png) - Full Background Cover & Full India Visibility
 function DarkWorldMapGraphic() {
   return (
     <div className="absolute inset-0 pointer-events-none select-none overflow-hidden">
-      {/* Background Graphic Image - 100% Full Visibility */}
+      {/* Background Graphic Image - 100% Full Edge-to-Edge Background Cover */}
       <div className="absolute inset-0 w-full h-full">
         <Image
-          src="/images/mapss.png"
+          src="/images/map2.png"
           alt="World Map - Serving Clients Across India & Globally"
           fill
-          className="object-cover object-[66%_center] sm:object-[67%_center] lg:object-[68%_center] opacity-100"
+          className="object-cover object-[44%_center] sm:object-[43.5%_center] lg:object-[43%_center] opacity-100"
           priority
         />
       </div>
 
-      {/* Soft gradient ONLY on the far left behind the text, leaving the map completely unobstructed */}
-      <div className="absolute inset-y-0 left-0 w-[52%] sm:w-[46%] bg-gradient-to-r from-[#090d16] via-[#090d16]/75 to-transparent pointer-events-none" />
+      {/* Subtle soft gradient ONLY behind left text so red India map remains completely unblocked */}
+      <div className="absolute inset-y-0 left-0 w-[46%] sm:w-[40%] bg-gradient-to-r from-[#090d16] via-[#090d16]/75 to-transparent pointer-events-none" />
     </div>
   );
 }
@@ -241,7 +241,7 @@ export function ReviewsSection() {
             <DarkWorldMapGraphic />
 
             {/* Foreground Content (constraining width so the right side map is completely visible) */}
-            <div className="relative z-10 max-w-[250px]">
+            <div className="relative z-10 max-w-[225px] sm:max-w-[235px] lg:max-w-[240px]">
               {/* Heading */}
               <h3 className="font-display text-[22px] sm:text-[24px] font-extrabold text-white leading-tight drop-shadow-sm">
                 Serving Clients
@@ -252,7 +252,7 @@ export function ReviewsSection() {
               <div className="h-[2.5px] w-9 rounded-full bg-[#e5231b] mt-3 mb-4" />
 
               {/* Description */}
-              <p className="text-[13px] sm:text-[13.5px] text-slate-300 leading-relaxed [text-wrap:pretty]">
+              <p className="text-[13px] sm:text-[13.5px] text-slate-300 leading-relaxed [text-wrap:pretty] max-w-[225px]">
                 Proud to deliver digital growth solutions to businesses across India and around the world.
               </p>
 
