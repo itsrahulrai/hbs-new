@@ -80,23 +80,23 @@ export function GrowthSystemSection() {
                 <span className="rounded-lg bg-[#f8fafc] px-2.5 py-1 font-medium border border-slate-200/70 shadow-2xs">
                   Discovery
                 </span>
-                <span className="text-slate-300 font-bold">→</span>
+                <span className="text-[#e5231b] font-bold">→</span>
                 <span className="rounded-lg bg-[#f8fafc] px-2.5 py-1 font-medium border border-slate-200/70 shadow-2xs">
                   Visibility
                 </span>
-                <span className="text-slate-300 font-bold">→</span>
+                <span className="text-[#e5231b] font-bold">→</span>
                 <span className="rounded-lg bg-[#f8fafc] px-2.5 py-1 font-medium border border-slate-200/70 shadow-2xs">
                   Engagement
                 </span>
-                <span className="text-slate-300 font-bold">→</span>
+                <span className="text-[#e5231b] font-bold">→</span>
                 <span className="rounded-lg bg-[#f8fafc] px-2.5 py-1 font-medium border border-slate-200/70 shadow-2xs">
                   Consideration
                 </span>
-                <span className="text-slate-300 font-bold">→</span>
+                <span className="text-[#e5231b] font-bold">→</span>
                 <span className="rounded-lg bg-[#f8fafc] px-2.5 py-1 font-medium border border-slate-200/70 shadow-2xs">
                   Conversion
                 </span>
-                <span className="text-slate-300 font-bold">→</span>
+                <span className="text-[#e5231b] font-bold">→</span>
                 <span className="rounded-lg bg-rose-50 px-2.5 py-1 font-bold border border-rose-200 text-[#e5231b] shadow-2xs">
                   ★ Growth
                 </span>

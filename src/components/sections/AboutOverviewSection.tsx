@@ -75,13 +75,13 @@ export function AboutOverviewSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false, amount: 0.15 }}
               transition={{ duration: 0.55, delay: 0.08, ease: "easeOut" }}
-              className="mt-2.5 font-display text-2xl sm:text-[27px] lg:text-[30px] xl:text-[32px] font-extrabold tracking-[-0.025em] text-[#0b132b] leading-[1.24]"
+              className="mt-2.5 font-display text-[19px] sm:text-[24px] md:text-[25px] lg:text-[27px] xl:text-[29px] font-extrabold tracking-[-0.025em] text-[#0b132b] leading-[1.3] sm:leading-[1.26] [text-wrap:balance]"
             >
-              <span className="block text-[#0b132b]">We Don’t Just Build a Digital Presence.</span>
-              <span className="inline-flex items-center gap-2 whitespace-nowrap mt-1">
-                <span>We Build</span>
-                <span className="relative inline-flex items-center justify-center -rotate-2 px-3 py-0.5 rounded-xl bg-gradient-to-r from-rose-100/90 via-red-50 to-rose-100/70 border border-rose-200/80 shadow-[0_2px_12px_rgba(229,35,27,0.12)] transition-transform duration-300 hover:rotate-0 hover:scale-105">
-                  <span className="italic font-black text-[#e5231b] tracking-tight">
+              <span className="block text-[#0b132b]">We Don’t Just Get You Seen.</span>
+              <span className="inline-flex flex-wrap items-center gap-1.5 sm:gap-2 mt-1 sm:mt-1.5">
+                <span className="text-[#0b132b]">We Build</span>
+                <span className="relative inline-flex items-center justify-center -rotate-1 sm:-rotate-2 px-2.5 sm:px-3.5 py-0.5 rounded-lg sm:rounded-xl bg-gradient-to-r from-rose-100/90 via-red-50 to-rose-100/70 border border-rose-200/80 shadow-[0_2px_10px_rgba(229,35,27,0.1)] transition-transform duration-300 hover:rotate-0 hover:scale-105 align-middle">
+                  <span className="italic font-black text-[#e5231b] tracking-tight whitespace-nowrap">
                     Digital Growth.
                   </span>
                 </span>
@@ -94,16 +94,16 @@ export function AboutOverviewSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false, amount: 0.15 }}
               transition={{ duration: 0.55, delay: 0.16, ease: "easeOut" }}
-              className="mt-3.5 space-y-2.5 text-[15px] sm:text-base text-[#475569] leading-relaxed text-justify hyphens-auto [text-wrap:pretty] break-words"
+              className="mt-3.5 space-y-2.5 text-[14.5px] sm:text-[15.5px] md:text-base text-[#475569] leading-[1.68] sm:leading-relaxed text-justify [text-align-last:left] [text-justify:inter-word] [text-wrap:pretty] break-normal hyphens-none"
             >
               <p>
-                <strong className="font-semibold text-[#0f172a]">Hover Business Services LLP</strong> provides the perfect combination of strategy, technology, marketing, AI, and creativity. It is our pleasure to provide assistance to companies in making their online presence better, reaching out to the right audience, and creating digital success.
+                <strong className="font-semibold text-[#0f172a]">Hover Business Services LLP</strong> combines strategy, technology, AI, marketing, and creativity to help businesses strengthen their online presence, reach the right audience, and drive digital growth.
               </p>
               <p>
-                Our range of skills, from SEO and AI-based search visibility through to web development, performance marketing, social media, content, and creative services, is meant to complement each other as one single strategy for digital success. No matter whether you are a start-up, SME, or a business organization, we do not confine ourselves to just providing digital solutions that only appeal from the outside.
+                From <strong className="font-semibold text-[#0f172a]">SEO and AI-powered search visibility to web development, performance marketing, social media, content, and creative services</strong>, we bring everything together into one focused digital strategy.
               </p>
               <p>
-                Our team designs solutions that can increase your business visibility, improve its credibility, generate relevant queries, and provide sustained growth for you.
+                Whether you’re a <strong className="font-semibold text-[#0f172a]">startup, SME, or established business</strong>, our solutions are designed to improve visibility, build credibility, generate relevant leads, and support sustainable growth.
               </p>
             </motion.div>
 
@@ -120,7 +120,7 @@ export function AboutOverviewSection() {
                   viewport={{ once: false, amount: 0.15 }}
                   transition={{ duration: 0.5, delay: 0.22, ease: "easeOut" }}
                   whileHover={{ y: -3, transition: { duration: 0.2 } }}
-                  className="group relative overflow-hidden rounded-2xl border border-rose-200/80 bg-gradient-to-br from-rose-50/85 via-red-50/40 to-white p-3.5 sm:p-4 shadow-2xs hover:shadow-md hover:border-rose-300 transition-all duration-300 flex flex-col justify-between"
+                  className="group relative overflow-hidden rounded-2xl border border-rose-200/80 bg-gradient-to-br from-rose-50/85 via-red-50/40 to-white p-3.5 sm:p-4 shadow-2xs hover:shadow-md hover:border-rose-300 transition-all duration-300 flex flex-col justify-between h-full"
                 >
                   <div>
                     <div className="flex items-center gap-2.5">
@@ -137,7 +137,7 @@ export function AboutOverviewSection() {
                       </h3>
                     </div>
 
-                    <p className="mt-2 text-[13.5px] sm:text-[14px] text-[#475569] leading-relaxed text-justify hyphens-auto [text-wrap:pretty] break-words">
+                    <p className="mt-2 text-[13.5px] sm:text-[14px] text-[#475569] leading-relaxed text-justify [text-align-last:left] [text-justify:inter-word] [text-wrap:pretty] break-normal hyphens-none">
                       {aboutOverview.mission.description}
                     </p>
                   </div>
@@ -150,7 +150,7 @@ export function AboutOverviewSection() {
                   viewport={{ once: false, amount: 0.15 }}
                   transition={{ duration: 0.5, delay: 0.28, ease: "easeOut" }}
                   whileHover={{ y: -3, transition: { duration: 0.2 } }}
-                  className="group relative overflow-hidden rounded-2xl border border-indigo-200/80 bg-gradient-to-br from-indigo-50/85 via-blue-50/40 to-white p-3.5 sm:p-4 shadow-2xs hover:shadow-md hover:border-indigo-300 transition-all duration-300 flex flex-col justify-between"
+                  className="group relative overflow-hidden rounded-2xl border border-indigo-200/80 bg-gradient-to-br from-indigo-50/85 via-blue-50/40 to-white p-3.5 sm:p-4 shadow-2xs hover:shadow-md hover:border-indigo-300 transition-all duration-300 flex flex-col justify-between h-full"
                 >
                   <div>
                     <div className="flex items-center gap-2.5">
@@ -165,7 +165,7 @@ export function AboutOverviewSection() {
                       </h3>
                     </div>
 
-                    <p className="mt-2 text-[13.5px] sm:text-[14px] text-[#475569] leading-relaxed text-justify hyphens-auto [text-wrap:pretty] break-words">
+                    <p className="mt-2 text-[13.5px] sm:text-[14px] text-[#475569] leading-relaxed text-justify [text-align-last:left] [text-justify:inter-word] [text-wrap:pretty] break-normal hyphens-none">
                       {aboutOverview.vision.description}
                     </p>
                   </div>
@@ -238,7 +238,17 @@ export function AboutOverviewSection() {
               </svg>
             </span>
             <p className="text-xs sm:text-[14.5px] text-[#334155] leading-relaxed font-medium">
-              {aboutOverview.closingStatement}
+              At <strong className="font-bold text-[#0b132b]">Hover Business Services LLP</strong>, we believe digital growth works best when{" "}
+              <span className="inline-block px-1.5 py-0.5 rounded-[4px] bg-amber-50 text-amber-900 border border-amber-200/90 font-semibold text-[11.5px] sm:text-[13px] whitespace-nowrap">strategy</span>{" "}
+              <span className="text-[#e5231b] font-bold">→</span>{" "}
+              <span className="inline-block px-1.5 py-0.5 rounded-[4px] bg-sky-50 text-sky-900 border border-sky-200/90 font-semibold text-[11.5px] sm:text-[13px] whitespace-nowrap">technology</span>{" "}
+              <span className="text-[#e5231b] font-bold">→</span>{" "}
+              <span className="inline-block px-1.5 py-0.5 rounded-[4px] bg-emerald-50 text-emerald-900 border border-emerald-200/90 font-semibold text-[11.5px] sm:text-[13px] whitespace-nowrap">marketing</span>{" "}
+              <span className="text-[#e5231b] font-bold">→</span>{" "}
+              <span className="inline-block px-1.5 py-0.5 rounded-[4px] bg-rose-50 text-rose-900 border border-rose-200/90 font-semibold text-[11.5px] sm:text-[13px] whitespace-nowrap">AI</span>{" "}
+              <span className="text-[#e5231b] font-bold">→</span>{" "}
+              <span className="inline-block px-1.5 py-0.5 rounded-[4px] bg-purple-50 text-purple-900 border border-purple-200/90 font-semibold text-[11.5px] sm:text-[13px] whitespace-nowrap">creativity</span>{" "}
+              move in the same direction. That connected approach shapes everything we do.
             </p>
           </div>
         </motion.div>

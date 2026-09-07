@@ -129,12 +129,12 @@ export function MarketingBanner() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false, amount: 0.15 }}
               transition={{ duration: 0.55, delay: 0.08, ease: "easeOut" }}
-              className="mt-3 sm:mt-3.5 font-display text-2xl sm:text-[28px] lg:text-[31px] xl:text-[33px] font-extrabold tracking-[-0.025em] text-[#0b132b] leading-[1.24] sm:leading-[1.28]"
+              className="mt-3 sm:mt-3.5 font-display text-[19px] sm:text-[24px] lg:text-[27px] xl:text-[29px] font-extrabold tracking-[-0.025em] text-[#0b132b] leading-[1.24] sm:leading-[1.28] [text-wrap:balance]"
             >
               <span className="block text-[#0b132b]">Digital Marketing That</span>
               <span className="inline-flex items-center gap-2 whitespace-nowrap mt-1">
                 <span>Drives</span>
-                <span className="relative inline-flex items-center justify-center -rotate-2 px-3 sm:px-3.5 py-0.5 rounded-xl bg-gradient-to-r from-rose-100/90 via-red-50 to-rose-100/70 border border-rose-200/80 shadow-[0_2px_12px_rgba(229,35,27,0.12)] transition-transform duration-300 hover:rotate-0 hover:scale-105">
+                <span className="relative inline-flex items-center justify-center -rotate-1 sm:-rotate-2 px-2.5 sm:px-3.5 py-0.5 rounded-lg sm:rounded-xl bg-gradient-to-r from-rose-100/90 via-red-50 to-rose-100/70 border border-rose-200/80 shadow-[0_2px_10px_rgba(229,35,27,0.1)] transition-transform duration-300 hover:rotate-0 hover:scale-105 align-middle">
                   <span className="italic font-black text-[#e5231b] tracking-tight">
                     Real Growth
                   </span>
@@ -142,27 +142,27 @@ export function MarketingBanner() {
               </span>
             </motion.h2>
 
-            {/* Opening Hook Statement */}
-            <motion.p
+            {/* Editorial Heading & Narrative */}
+            <motion.div
               initial={{ opacity: 0, y: 18 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false, amount: 0.15 }}
-              transition={{ duration: 0.55, delay: 0.14, ease: "easeOut" }}
-              className="mt-3 sm:mt-4 text-[14.5px] sm:text-[16px] lg:text-[17px] font-semibold text-[#0f172a] leading-relaxed"
+              transition={{ duration: 0.55, delay: 0.16, ease: "easeOut" }}
+              className="mt-3.5 space-y-2 text-[14px] sm:text-[15px] lg:text-[15.5px] text-[#475569] leading-[1.65] sm:leading-relaxed text-justify [text-align-last:left] [text-justify:inter-word] [text-wrap:pretty] break-normal hyphens-none"
             >
-              Visibility alone is just the start. Your digital presence has to get seen by the right audience, develop authority, and convince them to act.
-            </motion.p>
-
-            {/* Narrative Story */}
-            <motion.p
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false, amount: 0.15 }}
-              transition={{ duration: 0.55, delay: 0.2, ease: "easeOut" }}
-              className="mt-3 sm:mt-4 text-[14px] sm:text-[15.5px] lg:text-[17px] text-[#475569] leading-relaxed text-justify hyphens-auto [text-wrap:pretty] break-words"
-            >
-              With <strong className="font-semibold text-[#0f172a]">Hover Business Services LLP</strong>, strategy, data, artificial intelligence, content, search engine optimization (SEO), and performance marketing come together in a combination that focuses on achieving your business objectives. Our primary focus lies in connecting with the right target audience, enhancing your online presence, and providing digital experiences that drive them towards taking action. From ensuring higher search visibility to engaging them on the platforms where they interact, we focus on creating compelling digital experiences for you.
-            </motion.p>
+              <h3 className="font-display text-[15px] sm:text-[16.5px] lg:text-[17.5px] font-bold text-[#0b132b] tracking-tight">
+                Turn Digital Presence Into Business Performance.
+              </h3>
+              <p>
+                A strong digital presence should do more than generate visibility. <strong className="font-semibold text-[#0f172a]">It should attract the right audience, build authority, create demand, and drive action.</strong>
+              </p>
+              <p>
+                At <strong className="font-semibold text-[#0f172a]">Hover Business Services LLP</strong>, we unite <strong className="font-semibold text-[#0f172a]">strategy, technology, AI, SEO, content, and performance marketing</strong> to create digital experiences built around your business goals.
+              </p>
+              <p className="font-medium text-[#0f172a]">
+                <strong>From being discovered to being chosen—we help your brand move every step closer to growth.</strong>
+              </p>
+            </motion.div>
 
             {/* Capabilities List */}
             <motion.div
@@ -235,15 +235,35 @@ export function MarketingBanner() {
           {/* Straight Vertical Red Accent Bar */}
           <div className="absolute left-2.5 top-3.5 bottom-3.5 w-1.5 rounded-full bg-[#e5231b]" />
 
-          <div className="flex items-start sm:items-center gap-3 sm:gap-3.5 pl-1.5 sm:pl-2">
-            <span className="flex h-8 w-8 sm:h-9 sm:w-9 md:h-10 md:w-10 shrink-0 items-center justify-center rounded-xl bg-rose-50 text-[#e5231b] border border-rose-100 shadow-2xs">
-              <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-              </svg>
-            </span>
-            <p className="text-[13.5px] sm:text-[15px] lg:text-[17px] text-[#475569] leading-relaxed text-justify sm:text-left hyphens-auto [text-wrap:pretty] break-words">
-              It does not matter whether it is <strong className="font-semibold text-[#0f172a]">organic growth in traffic or SEO visibility</strong>, <strong className="font-semibold text-[#0f172a]">digital marketing activities</strong>, or <strong className="font-semibold text-[#0f172a]">higher levels of engagement</strong> with your audience — our digital marketing services will help you <span className="font-semibold text-[#e5231b]">increase your visibility</span>, <span className="font-semibold text-indigo-600">strengthen audience engagement</span>, and <span className="font-semibold text-emerald-600">turn more opportunities into business</span>.
-            </p>
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3.5 sm:gap-4 pl-1.5 sm:pl-2">
+            <div className="flex items-start gap-3 sm:gap-3.5">
+              <span className="flex h-8 w-8 sm:h-9 sm:w-9 md:h-10 md:w-10 shrink-0 items-center justify-center rounded-xl bg-rose-50 text-[#e5231b] border border-rose-100 shadow-2xs mt-0.5">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                </svg>
+              </span>
+              <div className="space-y-0.5">
+                <h3 className="font-display text-[15px] sm:text-base lg:text-[17px] font-bold text-[#0b132b] tracking-tight">
+                  Turn Attention Into Growth.
+                </h3>
+                <p className="text-[13.5px] sm:text-[14.5px] lg:text-[15.5px] text-[#475569] leading-relaxed">
+                  Get discovered by the right audience, build lasting trust, and turn digital visibility into <strong className="font-semibold text-[#0f172a]">real business results.</strong>
+                </p>
+              </div>
+            </div>
+
+            {/* Growth Funnel Pill / Flow Indicator */}
+            <div className="shrink-0 self-start md:self-center pl-11 md:pl-0">
+              <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-3.5 py-1 sm:py-1.5 rounded-xl bg-slate-50 border border-slate-200/90 text-[11px] sm:text-xs md:text-[13px] font-bold text-[#0b132b] shadow-2xs flex-wrap">
+                <span className="text-[#0f172a]">Visibility</span>
+                <span className="text-[#e5231b] font-bold">→</span>
+                <span className="text-indigo-600">Engagement</span>
+                <span className="text-[#e5231b] font-bold">→</span>
+                <span className="text-amber-600">Conversion</span>
+                <span className="text-[#e5231b] font-bold">→</span>
+                <span className="text-emerald-600 font-extrabold">Growth</span>
+              </div>
+            </div>
           </div>
         </motion.div>
 

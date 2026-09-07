@@ -14,9 +14,9 @@ export const marketingBanner = {
   headline: "Digital Marketing That Drives Real Growth",
   subheading: "STRATEGY • DATA • AI • SEO • PERFORMANCE MARKETING",
   intro:
-    "Visibility alone is just the start. Your digital presence has to get seen by the right audience, develop authority, and convince them to act.",
+    "Turn Digital Presence Into Business Performance. A strong digital presence should do more than generate visibility. It should attract the right audience, build authority, create demand, and drive action.",
   description:
-    "With Hover Business Services LLP, strategy, data, artificial intelligence, content, search engine optimization (SEO), and performance marketing come together in a combination that focuses on achieving your business objectives. Our primary focus lies in connecting with the right target audience, enhancing your online presence, and providing digital experiences that drive them towards taking action. From ensuring higher search visibility to engaging them on the platforms where they interact, we focus on creating compelling digital experiences for you.",
+    "At Hover Business Services LLP, we unite strategy, technology, AI, SEO, content, and performance marketing to create digital experiences built around your business goals. From being discovered to being chosen—we help your brand move every step closer to growth.",
   capabilitiesHeading: "Our digital marketing capabilities can help you:",
   capabilities: [
     "Strengthen online visibility across search and digital channels",
@@ -26,7 +26,7 @@ export const marketingBanner = {
     "Get insights from your campaign performance to enhance future marketing decisions",
   ],
   closing:
-    "It does not matter whether it is organic growth in traffic or SEO visibility, digital marketing activities, or higher levels of engagement with your audience; our digital marketing services will help you increase your visibility, strengthen audience engagement, and turn more opportunities into business.",
+    "Turn Attention Into Growth. Get discovered by the right audience, build lasting trust, and turn digital visibility into real business results. Visibility → Engagement → Conversion → Growth",
   ctaPrimary: { label: "Get Free Website Audit", href: "/contact?intent=website-audit" },
   ctaSecondary: { label: "Book Free Consultation", href: "/contact?intent=consultation" },
   bottomStats: [
@@ -74,24 +74,24 @@ export const trustBanner = {
 export const aboutOverview = {
   eyebrow: "ABOUT HOVER BUSINESS SERVICES",
   title: "About Hover Business Services LLP",
-  subheading: "We Don’t Just Build a Digital Presence. We Build Digital Growth.",
+  subheading: "We Don’t Just Get You Seen. We Build Digital Growth.",
   description:
-    "Hover Business Services LLP provides the perfect combination of strategy, technology, marketing, AI, and creativity. It is our pleasure to provide assistance to companies in making their online presence better, reaching out to the right audience, and creating digital success.",
+    "Hover Business Services LLP combines strategy, technology, AI, marketing, and creativity to help businesses strengthen their online presence, reach the right audience, and drive digital growth.",
   paragraphs: [
-    "Hover Business Services LLP provides the perfect combination of strategy, technology, marketing, AI, and creativity. It is our pleasure to provide assistance to companies in making their online presence better, reaching out to the right audience, and creating digital success.",
-    "Our range of skills, from SEO and AI-based search visibility through to web development, performance marketing, social media, content, and creative services, is meant to complement each other as one single strategy for digital success. No matter whether you are a start-up, SME, or a business organization, we do not confine ourselves to just providing digital solutions that only appeal from the outside.",
-    "Our team designs solutions that can increase your business visibility, improve its credibility, generate relevant queries, and provide sustained growth for you.",
+    "Hover Business Services LLP combines strategy, technology, AI, marketing, and creativity to help businesses strengthen their online presence, reach the right audience, and drive digital growth.",
+    "From SEO and AI-powered search visibility to web development, performance marketing, social media, content, and creative services, we bring everything together into one focused digital strategy.",
+    "Whether you’re a startup, SME, or established business, our solutions are designed to improve visibility, build credibility, generate relevant leads, and support sustainable growth.",
   ],
   mission: {
     title: "Our Mission",
     description:
-      "Our mission is to enable companies to leverage all digital opportunities in a more efficient way with the help of smart strategies, meaningful creativity, technology, and artificial intelligence. Our goal is to make the digital growth journey easier for every business by knowing what it needs and offering effective and relevant solutions.",
+      "To empower businesses to seize digital opportunities efficiently through smart strategy, meaningful creativity, modern technology, and AI — delivering tailored solutions that make sustainable growth simple and achievable.",
     icon: "rocket",
   },
   vision: {
     title: "Our Vision",
     description:
-      "Our vision is to be known worldwide as a trustworthy partner in digital business growth. We strive to help companies to remain visible and relevant despite the changes in digital behavior and to build strong digital foundations for future business growth.",
+      "To be recognized globally as the trusted digital growth partner — helping companies stay visible, relevant, and resilient while building scalable foundations for lasting success in a connected world.",
     icon: "globe",
   },
   closingStatement:
