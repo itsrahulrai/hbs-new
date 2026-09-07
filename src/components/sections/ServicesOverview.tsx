@@ -632,13 +632,9 @@ export function ServicesOverview() {
             {/* Right Growth Flow Badge */}
             <div className="shrink-0 pl-12 lg:pl-0">
               <div className="inline-flex flex-wrap items-center gap-1.5 sm:gap-2 px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-xl border border-slate-200/90 bg-slate-50/80 shadow-2xs text-[11px] sm:text-[12px] font-bold">
-                <span className="text-slate-900">Visibility</span>
                 <span className="text-slate-900">Seen</span>
                 <span className="text-rose-500 font-normal">→</span>
-                <span className="text-indigo-600">Engagement</span>
                 <span className="text-indigo-600">Trusted</span>
-                <span className="text-rose-500 font-normal">→</span>
-                <span className="text-amber-600">Conversion</span>
                 <span className="text-rose-500 font-normal">→</span>
                 <span className="text-emerald-600">Growth</span>
               </div>
