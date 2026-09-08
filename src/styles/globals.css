@@ -40,12 +40,12 @@
   --color-warning: #b25e09;
   --color-info: #1c64c9;
 
-  /* Type scale — fluid with clamp() */
-  --font-poppins: "Poppins", "Inter", sans-serif;
-  --font-display: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
-  --font-body: "Inter", system-ui, -apple-system, sans-serif;
-  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  /* Font Families mapped cleanly from Next.js font variables */
+  --font-display: var(--font-jakarta, "Plus Jakarta Sans", system-ui, -apple-system, sans-serif);
+  --font-body: var(--font-inter, "Inter", system-ui, -apple-system, sans-serif);
+  --font-mono: var(--font-plex-mono, "IBM Plex Mono", monospace);
 
+  /* Type scale — fluid with clamp() */
   --fs-xs: clamp(0.75rem, 0.72rem + 0.15vw, 0.8125rem);
   --fs-sm: clamp(0.875rem, 0.84rem + 0.15vw, 0.9375rem);
   --fs-base: clamp(1rem, 0.96rem + 0.2vw, 1.0625rem);
@@ -109,6 +109,8 @@ html {
     font-size: var(--fs-base);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: geometricPrecision;
     overflow-x: hidden;
   }
 
@@ -135,6 +137,15 @@ html {
   outline: 2px solid var(--color-primary);
   outline-offset: 3px;
   border-radius: 4px;
+}
+
+input:focus-visible,
+input:focus,
+textarea:focus-visible,
+textarea:focus,
+select:focus-visible,
+select:focus {
+  outline: none;
 }
 
 .container-max{

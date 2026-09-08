@@ -40,12 +40,12 @@ export function SectionHeading({
       )}
     >
       {eyebrow && (
-        <div className="inline-flex items-center gap-2 rounded-full border border-rose-200/90 bg-white/95 px-3.5 py-1 sm:px-4 sm:py-1.5 shadow-[0_2px_10px_rgba(229,35,27,0.06)] backdrop-blur-md mb-2.5 sm:mb-3">
-          <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#e5231b] opacity-75" />
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-[#e5231b]" />
+        <div className="inline-flex max-w-full items-center gap-2 rounded-none border border-slate-300/80 bg-white px-2.5 py-0.5 shadow-2xs mb-2.5 sm:mb-3">
+          <span className="relative flex h-2 w-2 shrink-0">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-none bg-[#e5231b] opacity-75" />
+            <span className="relative inline-flex rounded-none h-2 w-2 bg-[#e5231b]" />
           </span>
-          <span className="font-display text-[10px] min-[360px]:text-[11px] font-bold uppercase tracking-[0.14em] text-[#e5231b]">
+          <span className="font-sans text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.16em] text-[#e5231b] whitespace-nowrap">
             {eyebrow}
           </span>
         </div>

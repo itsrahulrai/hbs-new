@@ -166,7 +166,7 @@ export function ReviewsSection() {
   const visibleReviews = ALL_REVIEWS.slice(currentPage * 3, currentPage * 3 + 3);
 
   return (
-    <section className="relative overflow-hidden py-10 sm:py-14 lg:py-18 bg-gradient-to-b from-[#f8fafc] via-[#ffffff] to-[#f8fafc] border-b border-slate-100">
+    <section className="relative overflow-hidden py-6 sm:py-8 lg:py-10 bg-gradient-to-b from-[#f8fafc] via-[#ffffff] to-[#f8fafc] border-b border-slate-100">
       {/* Ambient background glows */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
         <div className="absolute top-1/4 -right-24 h-96 w-96 rounded-full bg-rose-100/30 blur-3xl" />
@@ -185,24 +185,24 @@ export function ReviewsSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0.15 }}
             transition={{ duration: 0.45, ease: "easeOut" }}
-            className="inline-flex items-center gap-2 rounded-full border border-rose-200/90 bg-white/95 px-3 py-1 sm:px-3.5 sm:py-1.5 shadow-[0_2px_10px_rgba(229,35,27,0.06)] backdrop-blur-md"
+            className="inline-flex items-center gap-2 rounded-none border border-slate-300/80 bg-white px-2.5 py-0.5 shadow-2xs"
           >
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#e5231b] opacity-75" />
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-[#e5231b]" />
+            <span className="relative flex h-2 w-2 shrink-0">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-none bg-[#e5231b] opacity-75" />
+              <span className="relative inline-flex rounded-none h-2 w-2 bg-[#e5231b]" />
             </span>
-            <span className="font-display text-[10px] min-[360px]:text-[11px] font-bold uppercase tracking-[0.14em] text-[#e5231b]">
+            <span className="font-sans text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.16em] text-[#e5231b] whitespace-nowrap">
               WHAT OUR CLIENTS SAY
             </span>
           </motion.div>
 
-          {/* Headline with Brand Accent Badge */}
+          {/* Headline with Brand Accent */}
           <motion.h2
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0.15 }}
             transition={{ duration: 0.55, delay: 0.08, ease: "easeOut" }}
-            className="mt-2.5 sm:mt-3 font-display text-[20px] sm:text-[25px] lg:text-[28px] xl:text-[30px] font-bold tracking-[-0.025em] text-[#0b132b] leading-[1.3] sm:leading-[1.28]"
+            className="mt-2.5 sm:mt-3 font-display text-[18px] sm:text-[22px] lg:text-[25px] xl:text-[28px] font-bold tracking-[-0.015em] text-[#0b132b] leading-[1.3]"
           >
             <span>Trusted by Businesses. Proven by </span>
             <span className="text-[#e5231b]">
@@ -216,16 +216,16 @@ export function ReviewsSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0.15 }}
             transition={{ duration: 0.55, delay: 0.16, ease: "easeOut" }}
-            className="mt-3 text-[14px] sm:text-[15.5px] text-[#475569] leading-[1.68] sm:leading-relaxed text-left [text-wrap:pretty] w-full max-w-none"
+            className="mt-2 sm:mt-2.5 text-[14px] sm:text-[15px] text-[#475569] leading-[1.6] text-left [text-wrap:pretty] w-full max-w-none"
           >
             Our clients trust us to turn their digital goals into meaningful outcomes. From improving online visibility and generating better opportunities to building stronger digital experiences, we work closely with businesses to create solutions that deliver value beyond the project.
           </motion.p>
         </div>
 
         {/* ========================================================= */}
-        {/* 2-CARD MAIN SECTION (MATCHING TARGET DESIGN) */}
+        {/* 2-CARD MAIN SECTION (SHARP, COMPACT & EXECUTIVE ARCHITECTURAL STYLE) */}
         {/* ========================================================= */}
-        <div className="mt-8 sm:mt-10 lg:mt-12 grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6 items-stretch">
+        <div className="mt-5 sm:mt-6 lg:mt-7 grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-5 items-stretch">
           
           {/* ======================================================= */}
           {/* LEFT CARD: DARK THEME MAP & COMPANY LOCATIONS */}
@@ -235,66 +235,83 @@ export function ReviewsSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false, amount: 0.15 }}
             transition={{ duration: 0.55, ease: "easeOut" }}
-            className="lg:col-span-5 relative flex flex-col justify-between rounded-2xl sm:rounded-3xl bg-[#090d16] text-white p-6 sm:p-7 shadow-[0_12px_40px_rgba(0,0,0,0.22)] overflow-hidden border border-slate-800/80 min-h-[460px]"
+            className="lg:col-span-5 relative flex flex-col justify-between rounded-none bg-[#090d16] text-white p-5 sm:p-6 lg:p-7 shadow-[0_4px_24px_rgba(0,0,0,0.3)] overflow-hidden border-2 border-slate-800/90 min-h-[460px] group"
           >
+            {/* Sharp Signature Top Red Accent Bar */}
+            <div className="absolute top-0 left-0 right-0 h-[3.5px] bg-[#810103] z-20" />
+
             {/* Background Dark World Map Graphic with Red India */}
             <DarkWorldMapGraphic />
 
-            {/* Foreground Content (constraining width so the right side map is completely visible) */}
+            {/* Foreground Content */}
             <div className="relative z-10 max-w-[225px] sm:max-w-[235px] lg:max-w-[240px]">
+              {/* Eyebrow / Step Indicator */}
+              <div className="flex items-center gap-2.5 mb-2.5">
+                <span className="font-mono text-[13.5px] font-extrabold text-[#e5231b] tracking-wider uppercase">
+                  OUR REACH
+                </span>
+                <span className="h-[2.5px] w-7 bg-[#e5231b]" />
+              </div>
+
               {/* Heading */}
-              <h3 className="font-display text-[22px] sm:text-[24px] font-extrabold text-white leading-tight drop-shadow-sm">
+              <h3 className="font-display text-[21px] sm:text-[23px] lg:text-[24px] font-extrabold text-white leading-tight">
                 Serving Clients
                 <span className="block text-[#e5231b] mt-0.5">Across India &amp; Globally</span>
               </h3>
 
               {/* Red Divider Line */}
-              <div className="h-[2.5px] w-9 rounded-full bg-[#e5231b] mt-3 mb-4" />
+              <div className="h-[2.5px] w-8 bg-[#e5231b] mt-2.5 mb-3" />
 
               {/* Description */}
-              <p className="text-[13px] sm:text-[13.5px] text-slate-300 leading-relaxed [text-wrap:pretty] max-w-[225px]">
+              <p className="text-[12.5px] sm:text-[13px] text-slate-300 leading-relaxed [text-wrap:pretty]">
                 Proud to deliver digital growth solutions to businesses across India and around the world.
               </p>
 
-              {/* Office Locations List with Red Pin Icons */}
-              <div className="mt-6 space-y-3 text-[13px]">
+              {/* Office Locations List with Sharp Framed Micro-Cards */}
+              <div className="mt-4 sm:mt-5 space-y-2 text-[13px]">
                 {/* Location 1: Delhi */}
-                <div className="flex items-start gap-2.5">
-                  <MapPin className="w-4 h-4 text-[#e5231b] shrink-0 mt-0.5" />
-                  <div>
-                    <p className="font-bold text-white text-[13.5px]">Delhi, India</p>
-                    <p className="text-[11.5px] text-slate-400">(Head Office)</p>
+                <div className="flex items-center gap-2.5 p-2 rounded-none bg-white/5 border border-white/15 hover:border-white/30 transition-colors">
+                  <div className="flex h-7 w-7 items-center justify-center rounded-none bg-[#810103] text-white shrink-0 shadow-2xs">
+                    <MapPin className="w-3.5 h-3.5 stroke-[2.4]" />
+                  </div>
+                  <div className="leading-tight">
+                    <p className="font-bold text-white text-[13px]">Delhi, India</p>
+                    <p className="text-[11px] text-slate-400 font-medium">Head Office</p>
                   </div>
                 </div>
 
                 {/* Location 2: Pitampura */}
-                <div className="flex items-start gap-2.5">
-                  <MapPin className="w-4 h-4 text-[#e5231b] shrink-0 mt-0.5" />
-                  <div>
-                    <p className="font-bold text-white text-[13.5px]">Pitampura, Delhi</p>
-                    <p className="text-[11.5px] text-slate-400">(Branch Office)</p>
+                <div className="flex items-center gap-2.5 p-2 rounded-none bg-white/5 border border-white/15 hover:border-white/30 transition-colors">
+                  <div className="flex h-7 w-7 items-center justify-center rounded-none bg-[#810103] text-white shrink-0 shadow-2xs">
+                    <MapPin className="w-3.5 h-3.5 stroke-[2.4]" />
+                  </div>
+                  <div className="leading-tight">
+                    <p className="font-bold text-white text-[13px]">Pitampura, Delhi</p>
+                    <p className="text-[11px] text-slate-400 font-medium">Branch Office</p>
                   </div>
                 </div>
 
                 {/* Location 3: Auckland */}
-                <div className="flex items-start gap-2.5">
-                  <MapPin className="w-4 h-4 text-[#e5231b] shrink-0 mt-0.5" />
-                  <div>
-                    <p className="font-bold text-white text-[13.5px]">Auckland, New Zealand</p>
-                    <p className="text-[11.5px] text-slate-400">(Global Office)</p>
+                <div className="flex items-center gap-2.5 p-2 rounded-none bg-white/5 border border-white/15 hover:border-white/30 transition-colors">
+                  <div className="flex h-7 w-7 items-center justify-center rounded-none bg-[#810103] text-white shrink-0 shadow-2xs">
+                    <MapPin className="w-3.5 h-3.5 stroke-[2.4]" />
+                  </div>
+                  <div className="leading-tight">
+                    <p className="font-bold text-white text-[13px]">Auckland, New Zealand</p>
+                    <p className="text-[11px] text-slate-400 font-medium">Global Office</p>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Bottom Button: Our Locations */}
-            <div className="relative z-10 mt-6 pt-3">
+            <div className="relative z-10 mt-5 pt-2">
               <a
                 href="/contact"
-                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl border border-slate-700 bg-slate-900/90 hover:bg-slate-800 text-white text-[12.5px] font-semibold transition-all hover:border-[#e5231b] group backdrop-blur-xs"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-none border border-slate-700 bg-slate-900/90 hover:bg-[#810103] hover:border-[#810103] text-white text-[12px] font-bold transition-all group shadow-xs"
               >
                 <span>Our Locations</span>
-                <ArrowRight className="w-3.5 h-3.5 text-[#e5231b] group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-3.5 h-3.5 text-[#e5231b] group-hover:text-white group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
           </motion.div>
@@ -307,21 +324,24 @@ export function ReviewsSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false, amount: 0.15 }}
             transition={{ duration: 0.55, ease: "easeOut" }}
-            className="lg:col-span-7 flex flex-col justify-between rounded-2xl sm:rounded-3xl border border-slate-200/90 bg-white p-5 sm:p-6 lg:p-7 shadow-[0_8px_30px_rgba(15,23,42,0.06)]"
+            className="lg:col-span-7 flex flex-col justify-between rounded-none border-2 border-slate-200/95 bg-white p-4 sm:p-5 lg:p-6 shadow-[0_4px_20px_rgba(0,0,0,0.04)] relative overflow-hidden"
             onMouseEnter={() => setIsAutoplay(false)}
             onMouseLeave={() => setIsAutoplay(true)}
           >
+            {/* Sharp Signature Top Red Accent Bar */}
+            <div className="absolute top-0 left-0 right-0 h-[3.5px] bg-[#810103]" />
+
             <div>
               {/* Header: Google Reviews + 4.9 Stars + Review on Google CTA Button */}
-              <div className="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-slate-100">
+              <div className="flex flex-wrap items-center justify-between gap-3 pb-3.5 border-b border-slate-200">
                 <div className="flex items-center gap-3">
-                  {/* Google Logo */}
-                  <div className="flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-xl bg-white border border-slate-100 shadow-xs">
-                    <GoogleIcon className="w-7 h-7" />
+                  {/* Google Logo Box */}
+                  <div className="flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-none bg-slate-50 border-[1.5px] border-slate-300 shadow-2xs">
+                    <GoogleIcon className="w-6 h-6 sm:w-7 sm:h-7" />
                   </div>
 
                   <div>
-                    <h3 className="font-display text-[18px] sm:text-[20px] font-bold text-slate-900 leading-tight">
+                    <h3 className="font-display text-[17px] sm:text-[19px] font-bold text-[#0b132b] leading-tight">
                       Google Reviews
                     </h3>
                     <div className="flex items-center gap-1.5 mt-0.5">
@@ -333,8 +353,8 @@ export function ReviewsSection() {
                           <Star key={i} className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
                         ))}
                       </div>
-                      <span className="text-[12px] text-slate-500 font-medium ml-0.5">
-                        (120+ Reviews)
+                      <span className="inline-flex items-center px-2 py-0.5 rounded-none bg-slate-100 border border-slate-300 text-[11px] font-semibold text-slate-800 ml-0.5 shadow-2xs">
+                        120+ Verified Reviews
                       </span>
                     </div>
                   </div>
@@ -345,7 +365,7 @@ export function ReviewsSection() {
                   href="https://maps.google.com/?q=Hover+Business+Services+LLP+Pearls+Omaxe+Tower+Netaji+Subhash+Place+Pitampura+Delhi"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-4 py-2 sm:px-4.5 sm:py-2.5 rounded-xl bg-[#e5231b] hover:bg-red-700 text-white text-[12px] sm:text-[13px] font-bold shadow-[0_4px_12px_rgba(229,35,27,0.2)] transition-all cursor-pointer"
+                  className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-none bg-[#e5231b] hover:bg-red-700 text-white text-[12px] sm:text-[12.5px] font-bold shadow-[0_4px_14px_rgba(229,35,27,0.28)] transition-all cursor-pointer"
                 >
                   <span>Review us on Google</span>
                   <ExternalLink className="w-3.5 h-3.5" />
@@ -353,7 +373,7 @@ export function ReviewsSection() {
               </div>
 
               {/* 3 Review Cards Grid / Slider */}
-              <div className="mt-5">
+              <div className="mt-4">
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={currentPage}
@@ -361,60 +381,68 @@ export function ReviewsSection() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
                     transition={{ duration: 0.35, ease: "easeInOut" }}
-                    className="grid grid-cols-1 md:grid-cols-3 gap-3.5 sm:gap-4 items-stretch"
+                    className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-3.5 items-stretch"
                   >
                     {visibleReviews.map((rev) => (
                       <div
                         key={rev.id}
-                        className="flex flex-col justify-between rounded-xl border border-slate-100 bg-[#fbfcfe] p-4 shadow-2xs hover:shadow-sm hover:border-slate-200 transition-all"
+                        className="group relative flex flex-col justify-between rounded-none border-2 border-slate-200/90 bg-white p-3.5 sm:p-4 shadow-[0_2px_10px_rgba(15,23,42,0.03)] hover:border-[#e5231b] hover:shadow-[0_12px_24px_rgba(229,35,27,0.12)] transition-all overflow-hidden"
                       >
+                        {/* Sharp Top Signature Red Accent Line */}
+                        <div className="absolute top-0 left-0 right-0 h-[3px] bg-[#810103] group-hover:bg-[#e5231b] transition-colors duration-300" />
+
                         <div>
-                          {/* Reviewer Header: Avatar + Name + 5 Stars + Red Quote Icon */}
-                          <div className="flex items-start justify-between gap-2">
-                            <div className="flex items-center gap-2.5">
-                              {/* User Photo Placeholder / Initials Avatar */}
-                              <div className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-slate-700 to-slate-900 text-white font-bold text-xs shadow-xs">
+                          {/* Reviewer Header: Avatar + Name + Rating Badge */}
+                          <div className="flex items-start justify-between gap-2 pb-1">
+                            <div className="flex items-center gap-2">
+                              {/* Avatar Initials Box */}
+                              <div className="flex h-8.5 w-8.5 items-center justify-center rounded-none bg-[#0b132b] text-white font-bold text-xs shadow-2xs group-hover:bg-[#e5231b] transition-colors shrink-0">
                                 {rev.name
                                   .split(" ")
                                   .map((n) => n[0])
                                   .join("")}
                               </div>
 
-                              <div>
-                                <h4 className="font-display text-[13px] font-bold text-slate-900 leading-tight">
+                              <div className="min-w-0">
+                                <h4 className="font-display text-[13.5px] font-bold text-[#0b132b] leading-tight truncate group-hover:text-[#e5231b] transition-colors">
                                   {rev.name}
                                 </h4>
-                                <p className="text-[11px] text-slate-500 font-medium">
+                                <p className="text-[11px] text-slate-500 font-medium truncate">
                                   {rev.company}
                                 </p>
                               </div>
                             </div>
 
-                            {/* Red Quote Symbol */}
-                            <span className="text-[#e5231b] font-serif text-[22px] font-black leading-none">
-                              ”
+                            {/* 5-Star Badge */}
+                            <div className="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded-none bg-amber-50 border border-amber-300 text-[10px] font-black text-amber-950 shrink-0 shadow-2xs">
+                              <span>5.0</span>
+                              <Star className="w-2.5 h-2.5 fill-amber-400 text-amber-400" />
+                            </div>
+                          </div>
+
+                          {/* Service Chip (Sharp & High Definition) */}
+                          <div className="my-2 flex items-center">
+                            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-none bg-slate-50 border border-slate-300 text-[10px] sm:text-[10.5px] font-semibold text-slate-800 truncate shadow-2xs">
+                              <span className="opacity-60 font-medium">Service:</span>
+                              <span className="font-bold text-slate-900 truncate">{rev.service}</span>
                             </span>
                           </div>
 
-                          {/* 5 Gold Stars */}
-                          <div className="flex items-center gap-0.5 text-amber-400 mt-2">
-                            {Array.from({ length: rev.rating }).map((_, i) => (
-                              <Star key={i} className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
-                            ))}
-                          </div>
-
                           {/* Review Text Quote */}
-                          <p className="mt-2.5 text-[12.5px] text-slate-600 leading-[1.6] line-clamp-4">
+                          <p className="text-[12px] sm:text-[12.5px] text-slate-700 leading-[1.6] line-clamp-4 [text-wrap:pretty]">
                             {rev.quote}
                           </p>
                         </div>
 
-                        {/* Bottom Row: Timestamp + Google "G" Icon */}
-                        <div className="mt-3.5 pt-2.5 border-t border-slate-100 flex items-center justify-between">
+                        {/* Bottom Row: Timestamp + Google Verified Badge */}
+                        <div className="mt-3 pt-2.5 border-t border-slate-200 flex items-center justify-between">
                           <span className="text-[11px] text-slate-400 font-medium">
                             {rev.date}
                           </span>
-                          <GoogleIcon className="w-4 h-4" />
+                          <div className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-none bg-slate-50 border border-slate-200 text-[10.5px] font-bold text-slate-700 shadow-2xs">
+                            <GoogleIcon className="w-3.5 h-3.5" />
+                            <span>Verified</span>
+                          </div>
                         </div>
                       </div>
                     ))}
@@ -423,8 +451,8 @@ export function ReviewsSection() {
               </div>
             </div>
 
-            {/* Slider Dots Indicator */}
-            <div className="mt-5 pt-3 border-t border-slate-100 flex items-center justify-center gap-1.5">
+            {/* Slider Dash Indicators (Sharp Architectural Look) */}
+            <div className="mt-4 pt-3 border-t border-slate-200 flex items-center justify-center gap-1.5">
               {Array.from({ length: totalPages }).map((_, idx) => (
                 <button
                   key={idx}
@@ -434,8 +462,8 @@ export function ReviewsSection() {
                     setCurrentPage(idx);
                   }}
                   aria-label={`Go to review slide ${idx + 1}`}
-                  className={`h-2 rounded-full transition-all duration-300 ${
-                    currentPage === idx ? "w-6 bg-[#e5231b]" : "w-2 bg-slate-200 hover:bg-slate-300"
+                  className={`h-1.5 rounded-none transition-all duration-300 ${
+                    currentPage === idx ? "w-8 bg-[#e5231b]" : "w-3 bg-slate-300 hover:bg-slate-400"
                   }`}
                 />
               ))}

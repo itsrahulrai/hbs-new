@@ -23,7 +23,7 @@ const reasons = [
     titlePrefix: "Results-Driven",
     titleHighlight: "Approach",
     description:
-      "We don't just do campaigns and provide digital materials. We aim to achieve results that will be valuable for your business - increased visibility and qualified leads, engagement, and conversion.",
+      "We don't just run campaigns. We focus on real business outcomes—bringing you qualified leads, higher visibility, and measurable conversions that drive revenue.",
     builtAround: "Measurable Growth",
     badgeLabel: "+230% Growth",
     icon: TrendingUp,
@@ -42,12 +42,12 @@ const reasons = [
     },
     // 3D Isometric Bar Chart Illustration with Upward Arrow
     illustration: (
-      <div className="relative w-32 h-32 min-[400px]:w-36 min-[400px]:h-36 sm:w-40 sm:h-40 flex items-center justify-center shrink-0">
+      <div className="relative w-24 h-24 sm:w-28 sm:h-28 flex items-center justify-center shrink-0">
         <svg viewBox="0 0 160 160" className="w-full h-full drop-shadow-lg" fill="none">
           {/* Base Platform Grid */}
-          <polygon points="20,115 80,145 140,115 80,85" fill="#fee2e2" fillOpacity="0.8" stroke="#fca5a5" strokeWidth="1.2" />
-          <polygon points="20,115 80,145 80,152 20,122" fill="#fecaca" />
-          <polygon points="80,145 140,115 140,122 80,152" fill="#fca5a5" />
+          <polygon points="20,115 80,145 140,115 80,85" fill="#f8fafc" fillOpacity="0.9" stroke="#e2e8f0" strokeWidth="1.2" />
+          <polygon points="20,115 80,145 80,152 20,122" fill="#e2e8f0" />
+          <polygon points="80,145 140,115 140,122 80,152" fill="#cbd5e1" />
 
           {/* Bar 1 (Short glass) */}
           <g transform="translate(35, 78)">
@@ -96,10 +96,10 @@ const reasons = [
   {
     number: "02",
     eyebrow: "PEOPLE-CENTRIC DESIGN",
-    titlePrefix: "Digital Experiences",
-    titleHighlight: "That Convert",
+    titlePrefix: "Conversion-Driven",
+    titleHighlight: "Experiences",
     description:
-      "Having people visit your site is not enough. Our team develops strategies and digital experiences to attract relevant audiences and drive them towards actions.",
+      "Traffic alone isn't enough. We build high-converting digital experiences designed to engage your target audience and turn visits into meaningful actions.",
     builtAround: "Better Conversion Opportunities",
     badgeLabel: "More Conversions",
     icon: MousePointerClick,
@@ -118,10 +118,10 @@ const reasons = [
     },
     // 3D Glass Browser Window + Cursor Illustration
     illustration: (
-      <div className="relative w-32 h-32 min-[400px]:w-36 min-[400px]:h-36 sm:w-40 sm:h-40 flex items-center justify-center shrink-0">
+      <div className="relative w-24 h-24 sm:w-28 sm:h-28 flex items-center justify-center shrink-0">
         <svg viewBox="0 0 160 160" className="w-full h-full drop-shadow-lg" fill="none">
           {/* Back Glow Oval */}
-          <ellipse cx="85" cy="85" rx="55" ry="35" fill="#e0e7ff" fillOpacity="0.7" />
+          <ellipse cx="85" cy="85" rx="55" ry="35" fill="#f1f5f9" fillOpacity="0.8" />
 
           {/* 3D Tilted Browser Window */}
           <g transform="rotate(-6 80 80)">
@@ -156,10 +156,10 @@ const reasons = [
   {
     number: "03",
     eyebrow: "TAILORED FOR YOUR BUSINESS",
-    titlePrefix: "Customized",
-    titleHighlight: "Digital Strategy",
+    titlePrefix: "Custom-Tailored",
+    titleHighlight: "Strategy",
     description:
-      "Each business, target audience, industry, and competition are unique. We take into account all of them to create a digital strategy for your company instead of providing cookie-cutter solutions.",
+      "Every business and industry is unique. We craft tailored digital roadmaps aligned with your specific market goals instead of generic, cookie-cutter templates.",
     builtAround: "Clear Strategic Direction",
     badgeLabel: "Focused Strategy",
     icon: Compass,
@@ -178,10 +178,10 @@ const reasons = [
     },
     // 3D Isometric Target & Arrow Illustration
     illustration: (
-      <div className="relative w-32 h-32 min-[400px]:w-36 min-[400px]:h-36 sm:w-40 sm:h-40 flex items-center justify-center shrink-0">
+      <div className="relative w-24 h-24 sm:w-28 sm:h-28 flex items-center justify-center shrink-0">
         <svg viewBox="0 0 160 160" className="w-full h-full drop-shadow-lg" fill="none">
           {/* Ambient Disc */}
-          <ellipse cx="85" cy="85" rx="55" ry="40" fill="#d1fae5" fillOpacity="0.6" />
+          <ellipse cx="85" cy="85" rx="55" ry="40" fill="#f1f5f9" fillOpacity="0.8" />
 
           {/* 3D Tilted Bullseye Target */}
           <g transform="rotate(12 80 80) translate(8, 0)">
@@ -222,7 +222,7 @@ const reasons = [
     titlePrefix: "AI-Powered",
     titleHighlight: "Visibility",
     description:
-      "AI and the emergence of new platforms are changing the ways businesses become discovered by people. We help companies change their visibility strategy to stay discoverable, relevant, and competitive.",
+      "Search and discovery are rapidly evolving with AI. We optimize your brand presence across AI platforms and search engines to keep you discoverable and ahead.",
     builtAround: "Future-Ready Digital Growth",
     badgeLabel: "AI-Ready 2026",
     badgeIcon: Bot,
@@ -242,11 +242,11 @@ const reasons = [
     },
     // 3D Volumetric Isometric AI Processor Core with 3D Search Glass & Neural Nodes
     illustration: (
-      <div className="relative w-32 h-32 min-[400px]:w-36 min-[400px]:h-36 sm:w-40 sm:h-40 flex items-center justify-center shrink-0">
+      <div className="relative w-24 h-24 sm:w-28 sm:h-28 flex items-center justify-center shrink-0">
         <svg viewBox="0 0 160 160" className="w-full h-full drop-shadow-xl" fill="none">
-          {/* Ambient Warm Glow */}
-          <ellipse cx="80" cy="88" rx="56" ry="38" fill="#fef3c7" fillOpacity="0.85" />
-          <ellipse cx="80" cy="132" rx="44" ry="12" fill="#fde68a" fillOpacity="0.5" />
+          {/* Ambient Clean Glow */}
+          <ellipse cx="80" cy="88" rx="56" ry="38" fill="#f8fafc" fillOpacity="0.8" />
+          <ellipse cx="80" cy="132" rx="44" ry="12" fill="#f1f5f9" fillOpacity="0.6" />
 
           {/* Gradients */}
           <defs>
@@ -364,10 +364,10 @@ const reasons = [
   {
     number: "05",
     eyebrow: "CONNECTED DIGITAL ECOSYSTEM",
-    titlePrefix: "Strategy, Technology",
-    titleHighlight: "& Creativity Together",
+    titlePrefix: "Unified Growth",
+    titleHighlight: "Ecosystem",
     description:
-      "By combining marketing expertise, technological skills, and creativity, digital growth gets a boost. We unite all these aspects in one company and help build connected digital experiences instead of managing disconnected solutions.",
+      "We bring marketing, technology, and design under one roof—delivering an integrated digital growth engine instead of managing disconnected vendors.",
     builtAround: "One Connected Growth Partner",
     badgeLabel: "One Growth Partner",
     icon: Layers,
@@ -386,9 +386,9 @@ const reasons = [
     },
     // 3D Interlocking Prisms / Connected Slabs Illustration
     illustration: (
-      <div className="relative w-32 h-32 min-[400px]:w-36 min-[400px]:h-36 sm:w-40 sm:h-40 flex items-center justify-center shrink-0">
+      <div className="relative w-24 h-24 sm:w-28 sm:h-28 flex items-center justify-center shrink-0">
         <svg viewBox="0 0 160 160" className="w-full h-full drop-shadow-lg" fill="none">
-          <ellipse cx="80" cy="85" rx="55" ry="38" fill="#f3e8ff" fillOpacity="0.7" />
+          <ellipse cx="80" cy="85" rx="55" ry="38" fill="#f1f5f9" fillOpacity="0.8" />
 
           {/* Layer 1 - Bottom Slab (Technology) */}
           <g transform="translate(0, 36)">
@@ -418,10 +418,10 @@ const reasons = [
   {
     number: "06",
     eyebrow: "CONTINUOUS VALUE CREATION",
-    titlePrefix: "Built for",
+    titlePrefix: "Sustainable",
     titleHighlight: "Long-Term Growth",
     description:
-      "Our approach goes beyond quick wins. It evolves along with your business and uses performance data, changes in customer behavior, and new opportunities.",
+      "We focus on sustainable compounding results. Our strategies evolve with real-time performance data and user behavior to scale your business long-term.",
     builtAround: "Sustainable Business Growth",
     badgeLabel: "Sustainable ROI",
     icon: BarChart3,
@@ -440,11 +440,11 @@ const reasons = [
     },
     // 3D Isometric Ascending Bar Chart with Flourishing Blue Plant Sprout
     illustration: (
-      <div className="relative w-32 h-32 min-[400px]:w-36 min-[400px]:h-36 sm:w-40 sm:h-40 flex items-center justify-center shrink-0">
+      <div className="relative w-24 h-24 sm:w-28 sm:h-28 flex items-center justify-center shrink-0">
         <svg viewBox="0 0 160 160" className="w-full h-full drop-shadow-xl" fill="none">
           {/* Ambient Glow Disc */}
-          <circle cx="80" cy="92" r="54" fill="#e0f2fe" fillOpacity="0.85" />
-          <ellipse cx="80" cy="138" rx="46" ry="12" fill="#bae6fd" fillOpacity="0.5" />
+          <circle cx="80" cy="92" r="54" fill="#f8fafc" fillOpacity="0.85" />
+          <ellipse cx="80" cy="138" rx="46" ry="12" fill="#f1f5f9" fillOpacity="0.5" />
 
           {/* Scaled & Offset Main Graphic (Leaves top room for floating pill badge) */}
           <g transform="translate(10, 30) scale(0.78)">
@@ -584,12 +584,11 @@ export function WhyHoverSection() {
 
 export function WhyChooseUsSection() {
   return (
-    <section className="relative overflow-hidden py-8 sm:py-10 lg:py-12 bg-gradient-to-b from-[#fcfcfe] via-[#f8fafc] to-[#fcfcfe] border-b border-slate-100">
+    <section className="relative overflow-hidden py-6 sm:py-8 lg:py-9 bg-gradient-to-b from-[#fcfcfe] via-[#f8fafc] to-[#fcfcfe] border-b border-slate-100">
       
-      {/* Ambient background glows */}
+      {/* Subtle clean background accent */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
-        <div className="absolute top-1/3 -left-20 h-96 w-96 rounded-full bg-rose-100/35 blur-3xl" />
-        <div className="absolute bottom-1/4 -right-20 h-96 w-96 rounded-full bg-indigo-50/45 blur-3xl" />
+        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 h-96 w-[800px] rounded-full bg-slate-100/40 blur-3xl" />
       </div>
 
       <Container className="max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -605,35 +604,30 @@ export function WhyChooseUsSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0.15 }}
             transition={{ duration: 0.45, ease: "easeOut" }}
-            className="inline-flex items-center gap-2 rounded-full border border-rose-200/90 bg-white/95 px-3 py-1 sm:px-3.5 sm:py-1 shadow-[0_2px_8px_rgba(229,35,27,0.06)] backdrop-blur-md"
+            className="inline-flex max-w-full items-center gap-2 rounded-full border border-rose-200/80 bg-white px-3.5 py-1.5 shadow-[0_2px_12px_rgba(229,35,27,0.08)] backdrop-blur-md"
           >
-            <span className="relative flex h-2 w-2">
+            <span className="relative flex h-2 w-2 shrink-0">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#e5231b] opacity-75" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-[#e5231b]" />
             </span>
-            <span className="font-display text-[10px] min-[360px]:text-[11px] font-bold uppercase tracking-[0.14em] text-[#e5231b]">
+            <span className="font-sans text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.16em] text-[#e5231b] whitespace-nowrap">
               WHY CHOOSE US
             </span>
           </motion.div>
 
-          {/* Headline with Brand Accent Badge */}
+          {/* Headline (Single Continuous Line) */}
           <motion.h2
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0.15 }}
             transition={{ duration: 0.55, delay: 0.08, ease: "easeOut" }}
-            className="mt-2.5 sm:mt-3 font-display text-[19px] sm:text-[24px] lg:text-[27px] xl:text-[29px] font-bold tracking-[-0.025em] text-[#0b132b] leading-[1.3] sm:leading-[1.28]"
+            className="mt-2.5 sm:mt-3 font-display text-[18px] sm:text-[22px] lg:text-[25px] xl:text-[28px] font-bold tracking-[-0.015em] text-[#0b132b] leading-[1.3]"
           >
-            <span className="block text-[#0b132b]">Why Choose Hover Business Services</span>
-            <span className="inline-flex flex-wrap items-center gap-1.5 sm:gap-2 mt-1 sm:mt-1.5">
-              <span className="text-[#0b132b]">for Your</span>
-              <span className="text-[#e5231b]">
-                Digital Growth?
-              </span>
-            </span>
+            <span>Why Choose Hover Business Services for Your </span>
+            <span className="text-[#e5231b]">Digital Growth?</span>
           </motion.h2>
 
-          {/* Intro Paragraph (Full Width) */}
+          {/* Intro Paragraph (Full Width, Crisp & Concise) */}
           <motion.p
             initial={{ opacity: 0, y: 18 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -641,14 +635,14 @@ export function WhyChooseUsSection() {
             transition={{ duration: 0.55, delay: 0.16, ease: "easeOut" }}
             className="mt-2 sm:mt-2.5 text-[14px] sm:text-[15px] text-[#475569] leading-[1.6] text-left [text-wrap:pretty] w-full max-w-none"
           >
-            Digital growth needs more than individual services. It needs the right strategy, execution, technology, and creative thinking working together. At <strong className="font-semibold text-[#0f172a]">Hover Business Services LLP</strong>, we focus on creating digital solutions aligned with your business goals and built for measurable, sustainable growth.
+            Digital growth needs more than siloed services. It needs strategy, technology, and creativity working together. At <strong className="font-semibold text-[#0f172a]">Hover Business Services LLP</strong>, we focus on delivering outcome-driven digital solutions engineered for measurable, sustainable growth.
           </motion.p>
         </div>
 
         {/* ========================================================= */}
-        {/* 6-CARD GRID (HIGH-IMPACT HIGHLIGHTED CARDS & DEDICATED ICONS) */}
+        {/* 6-CARD GRID (SHARP, COMPACT & PROFESSIONAL ENTERPRISE LOOK) */}
         {/* ========================================================= */}
-        <div className="mt-6 sm:mt-8 lg:mt-9 grid gap-5 sm:gap-6 lg:gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-5 sm:mt-6 lg:mt-7 grid gap-3.5 sm:gap-4 lg:gap-4.5 sm:grid-cols-2 lg:grid-cols-3">
           {reasons.map((reason, index) => {
             const IconComponent = reason.icon;
             return (
@@ -658,82 +652,75 @@ export function WhyChooseUsSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: false, amount: 0.15 }}
                 transition={{ duration: 0.5, delay: 0.05 * index, ease: "easeOut" }}
-                whileHover={{ y: -7, transition: { duration: 0.25 } }}
-                className={`group relative flex flex-col justify-between rounded-xl sm:rounded-2xl border border-slate-200/90 border-t-[3.5px] ${reason.accent.topBorder} bg-white p-5 sm:p-6 lg:p-6.5 shadow-[0_8px_30px_rgba(15,23,42,0.06)] ${reason.accent.hoverBorder} transition-all duration-300 overflow-hidden`}
+                whileHover={{ y: -4, transition: { duration: 0.25 } }}
+                className="group relative flex flex-col justify-between rounded-xl border border-slate-200/90 bg-white p-3.5 sm:p-4 lg:p-4.5 shadow-[0_2px_10px_rgba(15,23,42,0.04)] hover:border-slate-300 hover:shadow-[0_12px_28px_rgba(15,23,42,0.08)] transition-all duration-300 overflow-hidden"
               >
-                {/* Soft Ambient Radial Corner Glow */}
-                <div className={`pointer-events-none absolute -top-12 -right-12 h-60 w-60 rounded-full bg-gradient-to-br ${reason.accent.ambientGlow} blur-2xl group-hover:scale-130 transition-transform duration-500`} />
+                {/* Sharp Top Signature Red Accent Line */}
+                <div className="absolute top-0 left-0 right-0 h-[3px] bg-[#810103] group-hover:bg-[#e5231b] transition-colors duration-300" />
 
-                {/* Top Row: Number Badge + Eyebrow with Dash + Themed Header Icon */}
-                <div className="relative z-10 flex items-center justify-between pb-3">
-                  <div className="flex items-center gap-2">
-                    <span className={`font-mono text-[26px] sm:text-[28px] font-black tracking-tighter leading-none ${reason.accent.numberColor}`}>
-                      {reason.number}
-                    </span>
-                    <div className="flex items-center gap-1.5">
-                      <span className={`h-[2px] w-4 rounded-full ${reason.accent.lineColor}`} />
-                      <span className="font-display text-[9.5px] sm:text-[10px] font-bold uppercase tracking-[0.16em] text-slate-500">
-                        {reason.eyebrow}
+                {/* Card Header: (Top Left: Step Number + Line, Category) & (Top Right: Icon Box) — Matches Full-Spectrum Digital Solutions */}
+                <div className="relative z-10 flex items-start justify-between pb-1">
+                  <div className="flex flex-col items-start">
+                    <div className="flex items-center gap-2.5">
+                      <span className="font-mono text-[16px] font-extrabold text-[#810103] tracking-tight leading-none">
+                        {reason.number}
                       </span>
+                      <span className="h-[2.5px] w-7 bg-[#810103]" />
                     </div>
+
+                    <span className="font-display text-[9.5px] sm:text-[10px] font-extrabold uppercase tracking-[0.12em] text-slate-500 mt-1">
+                      {reason.eyebrow}
+                    </span>
                   </div>
 
-                  {/* Dedicated Themed Icon Badge */}
-                  <div className={`flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-lg sm:rounded-xl ${reason.accent.iconBg} shadow-sm group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300`}>
-                    <IconComponent className="h-4.5 w-4.5 sm:h-5 sm:w-5 stroke-[2.2]" />
+                  {/* Sharp Architectural Icon Box */}
+                  <div className="flex h-9 w-9 sm:h-9.5 sm:w-9.5 items-center justify-center rounded-lg bg-slate-50 border border-slate-200/90 text-slate-700 shadow-2xs group-hover:bg-[#810103] group-hover:text-white group-hover:border-[#810103] transition-all duration-300 shrink-0">
+                    <IconComponent className="h-4.5 w-4.5 stroke-[2.2]" />
                   </div>
                 </div>
 
-                {/* Middle Row: Content (Left) + 3D Illustration & Floating Badge (Right) */}
-                <div className="relative z-10 grid grid-cols-1 sm:grid-cols-[1fr_auto] gap-3 sm:gap-2 items-center my-1.5">
-                  {/* Text Content */}
-                  <div className="flex flex-col pr-1 sm:pr-2">
-                    {/* Two-Tone Title */}
-                    <h3 className="font-display text-[17.5px] sm:text-[18.5px] font-bold text-slate-900 tracking-tight leading-[1.28]">
-                      <span>{reason.titlePrefix} </span>
-                      <span className={reason.accent.highlightColor}>{reason.titleHighlight}</span>
-                    </h3>
+                {/* Sharp, Clean High-Contrast Title (Matches Full-Spectrum Digital Solutions) */}
+                <div className="relative z-10 mt-1 pb-0">
+                  <h3 className="font-display text-[17px] sm:text-[18px] font-bold text-[#0b132b] tracking-[-0.015em] leading-[1.3] group-hover:text-[#810103] transition-colors duration-300 truncate sm:whitespace-nowrap">
+                    {reason.titlePrefix} {reason.titleHighlight}
+                  </h3>
+                </div>
 
-                    {/* Description */}
-                    <p className="mt-2.5 text-[12.8px] sm:text-[13.2px] text-slate-600 leading-[1.62] text-left [text-wrap:pretty]">
-                      {reason.description}
-                    </p>
-                  </div>
+                {/* Middle Row: Description (Left) + 3D Visual with Prominent Highlight Badge (Right) */}
+                <div className="relative z-10 grid grid-cols-1 sm:grid-cols-[1fr_auto] gap-2 sm:gap-2.5 items-center my-0.5">
+                  {/* Left: Text Content */}
+                  <p className="text-[12.5px] sm:text-[13px] text-slate-600 leading-[1.55] text-left [text-wrap:pretty]">
+                    {reason.description}
+                  </p>
 
-                  {/* Right 3D Visual Scene with Floating Glass Badge */}
-                  <div className="relative flex flex-col items-center justify-center self-center shrink-0 mt-2 sm:mt-0">
-                    {/* Floating Metric Pill on Top-Right of 3D Model */}
+                  {/* Right: 3D Illustration Column with Prominent Floating Highlight Badge */}
+                  <div className="relative flex flex-col items-center justify-center self-center shrink-0 mt-0.5 sm:mt-0">
                     <motion.div
-                      animate={{ y: [0, -4, 0] }}
+                      animate={{ y: [0, -3, 0] }}
                       transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: index * 0.3 }}
-                      className={`absolute -top-2 right-1 z-20 inline-flex items-center gap-1 px-2.5 py-1 rounded-lg border text-[10.5px] sm:text-[11px] font-extrabold backdrop-blur-md shadow-md ${reason.accent.badgeStyle}`}
+                      className="mb-1 inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full border border-rose-200/90 bg-white text-[10.5px] sm:text-[11px] font-extrabold text-[#810103] shadow-[0_2px_8px_rgba(229,35,27,0.08)] whitespace-nowrap"
                     >
                       {reason.badgeIcon ? (
-                        <reason.badgeIcon className="w-3 h-3 stroke-[2.5]" />
+                        <reason.badgeIcon className="w-3 h-3 stroke-[2.5] text-[#e5231b]" />
                       ) : (
-                        <CheckCircle2 className="w-3 h-3 stroke-[2.5]" />
+                        <CheckCircle2 className="w-3 h-3 stroke-[2.5] text-[#e5231b]" />
                       )}
                       <span>{reason.badgeLabel}</span>
                     </motion.div>
 
-                    {/* 3D Illustration */}
-                    <motion.div
-                      whileHover={{ scale: 1.08, rotate: 1 }}
-                      transition={{ duration: 0.3 }}
-                    >
+                    <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }}>
                       {reason.illustration}
                     </motion.div>
                   </div>
                 </div>
 
-                {/* Bottom Tag: Built around Tag */}
-                <div className="mt-4 pt-3.5 border-t border-slate-100/90 relative z-10 flex items-center">
-                  <span className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-[4px] text-[11.5px] sm:text-[12px] border ${reason.accent.pillBg}`}>
-                    <span className="opacity-80 font-medium">Built around:</span>
-                    <span className="font-bold">{reason.builtAround}</span>
+                {/* Bottom Tag: Clean, Crisp Neutral Tag */}
+                <div className="mt-2 pt-2 border-t border-slate-100 relative z-10 flex items-center">
+                  <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-slate-50/90 border border-slate-200/80 text-[11px] sm:text-[11.5px] text-slate-700">
+                    <span className="opacity-70 font-medium">Built around:</span>
+                    <span className="font-bold text-slate-900">{reason.builtAround}</span>
                   </span>
                 </div>
-
               </motion.div>
             );
           })}

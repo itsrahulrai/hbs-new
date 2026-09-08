@@ -36,13 +36,13 @@ export function GrowthSystemSection() {
           {/* ----------------- LEFT COLUMN ----------------- */}
           <div className="lg:col-span-6 xl:col-span-6 flex flex-col justify-between">
             
-            {/* Ultra-Luxury Eyebrow Badge with Pulsing Beacon */}
-            <div className="inline-flex items-center gap-2.5 rounded-full border border-rose-200/90 bg-white/95 px-4 py-1.5 shadow-[0_2px_12px_rgba(229,35,27,0.08)] backdrop-blur-md self-start">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#e5231b] opacity-75" />
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-[#e5231b]" />
+            {/* Clean & Sharp Architectural Eyebrow Badge */}
+            <div className="inline-flex items-center gap-2 rounded-none border border-slate-300/80 bg-white px-2.5 py-0.5 shadow-2xs self-start">
+              <span className="relative flex h-2 w-2 shrink-0">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-none bg-[#e5231b] opacity-75" />
+                <span className="relative inline-flex rounded-none h-2 w-2 bg-[#e5231b]" />
               </span>
-              <span className="font-display text-[11px] font-bold uppercase tracking-[0.16em] text-[#e5231b]">
+              <span className="font-sans text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.16em] text-[#e5231b] whitespace-nowrap">
                 ONE CONNECTED DIGITAL GROWTH SYSTEM
               </span>
             </div>
